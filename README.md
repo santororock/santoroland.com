@@ -1,2 +1,2 @@
-# www.santoroland.com_3.0
+# santoroland.com
 Personal website www.santoroland.com made with Hugo
