@@ -1,0 +1,167 @@
+drwxr-xr-x 1 santo 197609         0 Oct 24  2011 AFS/   ------------------------ done 2016-12-30
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 AOLpitch/ --------------------- done 2016-12-31
+drwxr-xr-x 1 santo 197609         0 Feb 22  2011 ATT_UNCF/ --------------------- done 2016-12-31
+drwxr-xr-x 1 santo 197609         0 Nov 19  2010 Aflac/  ----------------------- done 2016-12-30
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 AirTrain/ --------------------- done 2017-01-08
+drwxr-xr-x 1 santo 197609         0 Oct 19  2009 Air_Miles/ -------------------- done 2014-01-26
+drwxr-xr-x 1 santo 197609         0 Oct 19  2016 AlfaRomeoSelvio/ -------------- done 2016-12-30
+drwxr-xr-x 1 santo 197609         0 Feb  5  2010 Anthony_Santoro/
+drwxr-xr-x 1 santo 197609         0 Jul  6  2011 Ants_HC11_001/ ---------------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 August/ ----------------------- done 2017-01-15
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 AveAmy/ ----------------------- done 2017-01-08
+drwxr-xr-x 1 santo 197609         0 Oct 21  2011 Bodum/ ------------------------ done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 C10/ -------------------------- done 2017-01-13
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 CHS/ -------------------------- done 2017-02-26
+drwxr-xr-x 1 santo 197609         0 Jan 20  2011 CLEFCAR/ ---------------------- done 2017-01-14
+drwxr-xr-x 1 santo 197609         0 Sep  9  2011 COMIC_CON_V027/ --------------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 CTC_pitch/ -------------------- done 2017-02-26
+drwxr-xr-x 1 santo 197609         0 Nov  6  2009 CanonPowerShot/ --------------- done 2017-01-09
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 Charter3/ --------------------- done 2016-12-30
+drwxr-xr-x 1 santo 197609         0 Oct 21  2011 CityClub/ --------------------- missing?
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 ComCentrl998/ ----------------- done 2017-01-17
+drwxr-xr-x 1 santo 197609         0 Jul 13  2014 CuriousBK_2001/ --------------- n/a
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Curious_BK/ ------------------- n/a
+drwxr-xr-x 1 santo 197609         0 Jul 24  2014 Curious_Internship/
+drwxr-xr-x 1 santo 197609         0 Jan  5  2012 DEX_NC11_035/ ----------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 DayInTheLife_V025/ ------------ done 2017-01-11
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Dentyne_1218/ ----------------- done 2017-01-14
+drwxr-xr-x 1 santo 197609         0 Jun 12  2010 Detroit_Zoo/ ------------------ done 2017-03-11
+drwxr-xr-x 1 santo 197609         0 Jul  2  2010 Dicks/ ------------------------ done 2017-02-01
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 Disney_Joy/ ------------------- done 2017-01-09
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 Dunkaroos/ -------------------- done 2017-01-11
+drwxr-xr-x 1 santo 197609         0 Oct 21  2011 Electrolux_NC11_007/ ---------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 EmpireStateBuilding/ ---------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Jan  5  2012 Eureka/ ----------------------- done 2017-02-25
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 Fashion_NC10_030/ ------------- done 2017-01-14
+drwxr-xr-x 1 santo 197609         0 Jul 22  2006 FringeFestival/
+drwxr-xr-x 1 santo 197609         0 Nov 19  2010 GMES/ ...? missing?
+drwxr-xr-x 1 santo 197609         0 Jan 13  2011 Gillette/ ... missing?
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 Glad/ ------------------------- done 2017-01-28
+drwxr-xr-x 1 santo 197609         0 Jan  5  2010 Gwano/ ------------------------ done 2017-03-13
+drwxr-xr-x 1 santo 197609         0 Jul 25  2011 HBO_1325/ --------------------- done 2017-01-28
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 Jack-X/ ----------------------- done 2017-01-31
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Jason_hanisec/
+drwxr-xr-x 1 santo 197609         0 Jul 19  2011 LG_Pitch/ --------------------- done 2017-03-17
+drwxr-xr-x 1 santo 197609         0 Feb  4  2010 LittileSpirit_C096/ ----------- done 2017-02-09
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 LoveGuru/ --------------------- done 2017-01-10
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 LuBiscuits/ ------------------- done 2016-12-31
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 Lugz/ ------------------------- done 2017-01-17
+drwxr-xr-x 1 santo 197609         0 Dec 22  2010 Lunchables/ ------------------- done 2017-03-08
+                                                 MarsChocolateBarPitch --------- done 2018-03-21
+drwxr-xr-x 1 santo 197609         0 Jun 17  2010 Marvin_1356/ ------------------ done 2017-03-08
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 MercedezBenz/ ----------------- not a thing
+drwxr-xr-x 1 santo 197609         0 Jan  5  2012 Miles_Away_Pitch/ ------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Modells/ ---------------------- done 2017-03-14
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 NC_presentation/ -------------- not a thing
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 NFL/ -------------------------- done 2017-02-28
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 NYU/
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 NewYork_C116/ ----------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Jul 21  2010 Nike/ ------------------------- not me
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 NurseJackie/ ------------------ done 2017-02-09
+                                                 Optimum-Online ---------------- done 2018-03-21
+drwxr-xr-x 1 santo 197609         0 Jul  5  2014 OrangeTree/
+drwxr-xr-x 1 santo 197609         0 Jul 25  2011 OrbitMist/ -------------------- done 2017-02-28
+drwxr-xr-x 1 santo 197609         0 Oct  9  2009 Oxygen/ ----------------------- done 2017-02-16
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 PBS915/ ----------------------- done 2017-02-27
+drwxr-xr-x 1 santo 197609         0 Oct  9  2009 PaintEffectsWorkShop/
+drwxr-xr-x 1 santo 197609         0 Oct 21  2011 Paragaurd/ -------------------- done 2017-03-02
+drwxr-xr-x 1 santo 197609         0 Oct 26  2014 Portfolio/
+drwxr-xr-x 1 santo 197609         0 Oct  9  2009 Project_G_aka_Gondry/ --------- done 2018-03-32
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 REACH914/ --------------------- done 2017-01-22
+drwxr-xr-x 1 santo 197609         0 Jul 24  2014 Raygun/
+drwxr-xr-x 1 santo 197609         0 Jan  5  2012 Regions/ ---------------------- not a thing
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 Reindeer_Xmas/ ---------------- done 2016-12-30
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 RemovingFields/ --------------- not a thing
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 Ronzoni/ ---------------------- done 2017-01-26
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 SHAW_NC10_037/ ---------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Schwab_Tests/ ----------------- done 2017-01-29
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 SciFi500/ --------------------- done 2017-01-24
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 SheepInTheBigCity/ ------------ done 2017-01-17
+drwxr-xr-x 1 santo 197609         0 Jan  5  2014 Spurlock/ --------------------- done 2017-01-28
+drwxr-xr-x 1 santo 197609         0 Oct 23  2011 StinkAnt/ --------------------- done 2017-01-17
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 Target/ ----------------------- done 2017-01-18
+drwxr-xr-x 1 santo 197609         0 Sep  9  2011 TeensLikePhil_SPEC/ ----------- done 2018-03-22
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 TiniPuppinni1247/ ------------- done 2017-03-08
+drwxr-xr-x 1 santo 197609         0 Oct  9  2009 Toyota/ ----------------------- done 2017-01-29
+drwxr-xr-x 1 santo 197609         0 Oct 14  2009 Truth/ ------------------------ done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 TurboTax_Pitch/ --------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Jul  6  2011 USTA/ ------------------------- I didn't do anything. VFX sup?
+drwxr-xr-x 1 santo 197609         0 Aug 19  2011 Unforgettable_Pitch/ ---------- done 2017-03-01
+drwxr-xr-x 1 santo 197609         0 Oct 21  2011 WP_logo/ ---------------------- done 2017-03-11
+drwxr-xr-x 1 santo 197609         0 Oct  9  2009 Wellsfargo_01-04-2007/ -------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 asantoro/
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 barbie/ ----------------------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Jul  5  2014 bonz/ ------------------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 contactSheet_02-18-2008/
+drwxr-xr-x 1 santo 197609         0 Jul  9  2010 gondry/ ----------------------- done 2017-02-12
+drwxr-xr-x 1 santo 197609         0 Jul 24  2014 good night moon/
+drwxr-xr-x 1 santo 197609         0 Oct 22  2013 gravity/ ---------------------- done 2018-01-19
+drwxr-xr-x 1 santo 197609         0 Jan  4  2014 hyperhype7860/
+drwxr-xr-x 1 santo 197609         0 Oct 31  2014 marble/
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 miller/ ----------------------- done 2017-01-24
+drwxr-xr-x 1 santo 197609         0 Jan  3  2014 mocap/
+drwxr-xr-x 1 santo 197609         0 Oct  8  2009 nickTVland/ ------------------- done 2017-01-22
+drwxr-xr-x 1 santo 197609         0 Feb 23  2014 nickToons/ -------------------- done 2017-01-19
+drwxr-xr-x 1 santo 197609         0 Jan  4  2014 photoPuppet/
+drwxr-xr-x 1 santo 197609         0 Jun 12  2010 pictureka/ -------------------- done 2017-03-09
+drwxr-xr-x 1 santo 197609         0 Jan  4  2014 ronin/ ------------------------ done 2018-03-23
+drwxr-xr-x 1 santo 197609         0 Jan  3  2014 siggraph2008/ ----------------- not really a thing
+drwxr-xr-x 1 santo 197609         0 Aug 30  2010 simpsons/ --------------------- done 2017-01-10
+drwxr-xr-x 1 santo 197609         0 Jan  5  2010 spongebob/ -------------------- done 2017-02-11
+drwxr-xr-x 1 santo 197609         0 Jan  4  2014 stiches/ ---------------------- meh
+drwxr-xr-x 1 santo 197609         0 Jan  3  2014 stockhausen/
+drwxr-xr-x 1 santo 197609         0 Jul  5  2014 summer_hightlights/
+drwxr-xr-x 1 santo 197609         0 Aug 30  2010 timeLapse/
+drwxr-xr-x 1 santo 197609         0 Jul  6  2011 zeitoun_v012/ ----------------- done 2017-02-12
+Meatcat 2009
+Royal Indy (Microsoft)
+Passage - https://www.imdb.com/title/tt1485051/?ref_=nm_flmg_dr_8 -------------- done 2018-04-21
+Leela - Game ------------------------------------------------------------------- done 2018-04-20
+Zoopals - 2009?
+Royal Indy (microsoft) - 2009
+Rolaids - 2008 - TD
+Bazooka - 2007
+Kraft - 2007
+Smart Balance - 2011
+Coach Bags - 2011
+City Club - 2011
+Rancho - 2011
+Rancho - 2010
+Ladies Speed Stick - 2011
+Kate Spade - 2011
+StarBurst - 2011
+Regions - 2011
+Target - 2010
+Lunchables Pitch - 2010
+The Big C - 2010
+Chase Pitch - 2010
+AMEX - 2010
+Kaos - 2010
+Baby Bottle Pops - 2010
+Nestea - 2010
+J-Crew - 2010 (Nov 29th) - first time using nuke in production.
+Freedom - 2010
+Covergirl - 2006
+Big and Small Pitch - 2006
+Scrubbing Bubbles Pitch - 2006
+Five Alive Pitch - 2006
+Nelmon Hates Everything - 2006
+Chef Pitch - 2006
+Playhouse Disney Pitch - 2006
+Shelter Institute Adventure
+CGI - 1998 --------------------------------------------------------------------- started 2018-04-21
+France - Grenoble -  Paragliding
+BLURAY Barbie Diaries ---------------------------------------------------------- done 2017-11-05
+BLURAY Wrath of the Titians ---------------------------------------------------- done 2017-09-28
+BLURAY Robocop ----------------------------------------------------------------- done 2017-09-28
+BLURAY Jupiter Ascending ------------------------------------------------------- done 2017-09-27
+BLURAY Dracula ----------------------------------------------------------------- done 2017-10-12
+BLURAY Everest ----------------------------------------------------------------- done 2017-09-29
+BLURAY Arrival ----------------------------------------------------------------- done 2017-05-06
+BLURAY It's Kind of a Funny Story ---------------------------------------------- done 2016-12-30
+BLURAY Paddington -------------------------------------------------------------- done 2017-10-02
+BLURAY Fantastic Beasts -------------------------------------------------------- done 2017-10-16
+BLURAY Gravity ----------------------------------------------------------------- done 2018-01-19
+BLURAY BladeRunner ------------------------------------------------------------- done 2018-03-21
+BLURAY Geostorm ---------------------------------------------------------------- done 2018-03-23
+The Gay Men Project: http://thegaymenproject.com/2013/09/01/anthony-animator-montreal/

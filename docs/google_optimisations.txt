@@ -1,0 +1,96 @@
+There are various optimizations that google recommends for the website.
+This document can be treated as a sort of "todo list" of techy things for the site.
+
+1. Structured data
+I suppose this is a series of tags to help google know what's a menu, or a paragraph, or a video, etc.
+https://search.google.com/structured-data/testing-tool/u/0/
+https://jsonld.com/ (very good reference!)
+
+example json:
+<script type="application/ld+json">
+{ "@context": "http://www.santoroland.com",
+ "@type": "BlogPosting",
+ "headline": ": Alfa Romeo - Stelvio",
+ "image": "http://www.santoroland.com/img/work/2016/alfa-romeo-stelvio/alfa-romeo-stelvio_header.jpg",
+ "genre": "search engine optimization",
+ "keywords": "vfx compositing",
+ "wordcount": "174",
+ "url": "http://localhost:1313/work/alfa-romeo-stelvio/",
+ "datePublished": "2016-12-27",
+ "dateCreated": "2016-12-27",
+ "dateModified": "2016-12-27",
+ "description": "Blog post for Alpha Romeo work on car commercial",
+ "articleBody": "In Framestore Montreal we have been playing with the idea of expanding the facility to do some commercial work. It's all theoretical at this point:) This Alfa Romeo commercial is the fruit of such labor. The NY and LA studios were keen to take on the new work, but were at capacity (Good for them!!). So we all got together and hashed out the details of what it would take for the Montreal crew to complete some of the CG work.
+I think result speaks for themselves. I've personally always wanted to work on a high end card commercial so this was a very exciting project for me.
+The multi site-ness being what it is, I found it hard to always know who was doing what in each studio, but here are some peeps as I recall it:
+* Director: Luigi. (another luigi!)
+* CG Supervisor: Benjamin Hubert
+* Compositing Supervisor: Anthony Luigi Santoro
+* Compositing artists (the people who finaled the shots!):
+Oliver Ferguson Tylor
+Marc Olivier
+Antoine Goethes (sp?)
+Andrew Chiu
+Jerome Foucute (sp?).",
+   "author": {
+    "@type": "Person",
+    "name": "Anthony Luigi Santoro"
+  }
+ }
+</script>
+
+
+
+
+2. Duplicate Metadata
+Some pages have duplicate metadata. This confuses google I guess. And, honestly it doesn't sound super great.
+https://www.google.com/webmasters/tools/dashboard?hl=en&siteUrl=http%3A%2F%2Fwww.santoroland.com%2F
+
+
+3. Search Appearance.
+Apparently you can influence how your website is displayed in a returned google search....to and extent.
+It can be manipulated via tags and metadata again apparently. Google Console for more information.
+
+4. Minify HTML / gzip
+Done and is currently in the .htaccess file (didn't minify though because that added almost nothing compared to the gzip!)
+Seems like there could be up to a 30-50% savings on html size if the content is minified. Example large html file: Fantastic Beasts, goes from 145kb down to 90kb
+An article about gzip compression. Very interesting:
+https://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/
+Then use the online gzip test to see if you are serving up compressed content:
+http://www.gidnetwork.com/tools/gzip-test.php
+
+
+5. BrowserCaching
+Done and is currently in the .htaccess file
+
+
+
+6. Pinterest style quantize_color image_files
+Done! And it's amazing!!
+
+
+7.
+Your Current Home Page Meta Keywords: "" Not Defined ""
+
+
+8. w3c markdown validation
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.santoroland.com%2F
+
+9. Defered Javascript loading:
+https://varvy.com/pagespeed/defer-loading-javascript.html
+
+10. Google AMP
+I don't exactly understand what google amp is. It is a mobile amp development platform....or is it something more similar to json files and structured data?
+
+
+11. Image optimization for mobile:
+<picture>   
+   <source srcset="768x432.jpg" media="(min-width: 768px)">
+   <source srcset="414x232.jpg" media="(min-width: 414px)">
+   <source srcset="375x210.jpg" media="(min-width: 375px)">
+   <img src="https://placehold.it/320x180" alt=""> 
+<picture> 
+
+12. no follow links: https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links
+
+13. google webmaster guidelines: https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines

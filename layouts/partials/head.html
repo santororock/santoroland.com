@@ -1,0 +1,86 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{ with .Title }}<title>{{ . }}</title>{{ end }}
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+
+
+<!-- Theme stylesheet, if possible do not edit this stylesheet -->
+{{ with .Site.Params.style }}
+  <link href="{{ printf "css/style.%s.min.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
+{{ else }}
+  <link href="{{ "css/style.default.min.css" | absURL }}" rel="stylesheet" id="theme-stylesheet">
+{{ end }}
+
+
+<!-- Custom stylesheet - for your changes -->
+<link href="{{ "css/custom.min.css" | absURL }}" rel="stylesheet">
+
+
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<!-- site manifest -->
+<link rel="manifest" href="/site.webmanifest">
+
+
+<!-- grids gallery styles -->
+<link rel="stylesheet" href="{{ "css/pure.min.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/grids-responsive.min.css" | absURL }}">
+
+
+<!-- featherlight lightbox CSS -->
+<link href="{{ .Site.BaseURL }}/featherlight/featherlight.min.css" type="text/css" rel="stylesheet" />
+<link href="{{ .Site.BaseURL }}/featherlight/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="{{ "css/font-awesome.min.css" | absURL }}">
+
+
+
+
+
+<!-- metadata for social sharing sites / services-->
+
+{{ $.Scratch.Set "image" ""}}
+{{ if .Params.image }}
+  {{ $.Scratch.Set "image" .Params.image }}
+{{ else }}
+  {{ $.Scratch.Set "image" .Site.Params.image_social }}
+{{ end }}
+{{ $social_image := $.Scratch.Get "image" }}
+
+
+<!-- for Google -->
+<meta name="googlebot" content="index,follow,snippet,archive">
+{{ partial "google_analytics.html" . }}
+<!-- {{ template "_internal/google_analytics_async.html" . }} -->
+<meta name="description" content="{{ .Params.summary }}" />
+<meta name="keywords" content="{{ .Params.tags }}" />
+<meta name="author" content="{{ .Site.Title }}" />
+<meta name="copyright" content="{{ .Site.Copyright }}" />
+
+<!-- misc -->
+<meta name="robots" content="all,follow">
+
+<!-- for Facebook -->
+<meta property="fb:app_id" content="1306512076124639" />
+
+<!-- for Open Graph -->
+<meta property="og:title" content="{{ .Params.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:description" content="{{ .Params.summary }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ $social_image }}">
+
+
+<!-- for Twitter -->
+<meta name="twitter:card" content="{{ .Params.summary }}" />
+<meta name="twitter:title" content="{{ .Params.title }}" />
+<meta name="twitter:description" content="{{ .Params.summary }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $social_image }}" />

@@ -1,0 +1,21 @@
+<!-- image -->
+
+<figure>
+  <a href="#" data-featherlight="{{ .Get "src" }}">
+
+    {{ $src := .Get "thumb" }}
+    {{ $config := imageConfig (printf "/static/%s" $src) }}
+
+    {{ if gt $config.Width $config.Height }}
+      <img src="{{ .Get "thumb" }}" style="width: 100%;" >
+    {{ else }}
+      <img src="{{ .Get "thumb" }}" style="width: 100%; max-width: {{$config.Width}}px; display:block; margin-left: auto; margin-right: auto;">
+    {{ end }}
+
+  </a>
+  <figcaption>
+      <p> {{ .Get "caption" }}</p>
+  </figcaption>
+</figure>
+
+<!-- image -->

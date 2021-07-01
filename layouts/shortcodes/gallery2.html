@@ -1,0 +1,45 @@
+
+
+{{ $gallery_name := (.Get 0) }}
+
+{{ $file := (printf "/static/img/%s/gallery.html" $gallery_name) }}
+{{ $path := (printf "/img/%s" $gallery_name) }}
+{{ $gallery_file := readFile $file }}
+
+
+<!-- gallery start -->
+<section data-featherlight-gallery data-featherlight-filter="a">
+  <div class="pure-g" align="center">
+    {{ range $line := split $gallery_file "\n" }}
+      {{ $params := split $line " "}}
+      {{ $class := replace (index $params 0) "\"" "" }}
+      {{ $image := index $params 1 }}
+      {{ $items := split $image "|" }}
+      {{ $itemCount := len $items }}
+        {{ if ge $itemCount 2 }}
+          <div class={{ $class }}>
+            <div style="padding: .2em .2em .2em .2em">
+              {{ $img_no_quotes := replace (index $items 0) "\"" "" }}
+              {{ $img_thumb := replace $img_no_quotes "png" "jpg" }}
+              {{ $img_thumb := (printf "%s/thumb_%s" $path $img_thumb ) }}
+
+              <a href="{{ $path }}/{{ $img_no_quotes }}" class="gallery">
+                {{ $img := $img_thumb }}
+                {{ $config := imageConfig (printf "/static/%s" $img) }}
+                {{ $file := (printf "/static/%s.quantized" $img) }}
+                <img
+                  class="b-lazy pure-img-responsive"
+                  src="data:image/gif;base64,{{readFile $file}}"
+                  data-src="{{ $img }}"
+                  alt="{{ if ge $itemCount 2 }}{{ $img_no_quotes }}{{ else }}{{ "" }}{{ end }}"
+                  width="{{$config.Width}}" height="{{$config.Height}}"
+                />
+              </a>
+            </div>
+          </div>
+        {{ end }}
+    {{ end }}
+  </div>
+
+</section>
+<!-- gallery end -->

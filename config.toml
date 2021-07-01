@@ -1,0 +1,239 @@
+baseurl = "https://www.santoroland.com/"
+title = "santoroland"
+theme = "hugo-creative-portfolio-theme"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "wwwsantorolandcom"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-89626138-1"
+facebookAppId = "1306512076124639"
+copyright = "Anthony Luigi Santoro"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+
+timeout = 200000
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  year = "years"
+
+
+
+
+
+
+# menu stuff
+[[menu.stuff]]
+name = "Stuff"
+identifier = "random_stuff"
+
+[[menu.work]]
+name = "Work"
+identifier = "work"
+
+
+[[menu.work]]
+name = "2021"
+parent = "work"
+identifier = "work_2021"
+weight = -2021
+
+[[menu.work]]
+name = "2019"
+parent = "work"
+identifier = "work_2019"
+weight = -2019
+
+[[menu.work]]
+name = "2018"
+parent = "work"
+identifier = "work_2018"
+weight = -2018
+
+[[menu.work]]
+name = "2017"
+parent = "work"
+identifier = "work_2017"
+weight = -2017
+
+[[menu.work]]
+name = "2016"
+parent = "work"
+identifier = "work_2016"
+weight = -2016
+
+[[menu.work]]
+name = "2015"
+parent = "work"
+identifier = "work_2015"
+weight = -2015
+
+[[menu.work]]
+name = "2014"
+parent = "work"
+identifier = "work_2014"
+weight = -2014
+
+[[menu.work]]
+name = "2013"
+parent = "work"
+identifier = "work_2013"
+weight = -2013
+
+[[menu.work]]
+name = "2012"
+parent = "work"
+identifier = "work_2012"
+weight = -2012
+
+[[menu.work]]
+name = "2011"
+parent = "work"
+identifier = "work_2011"
+weight = -2011
+
+[[menu.work]]
+name = "2010"
+parent = "work"
+identifier = "work_2010"
+weight = -2010
+
+[[menu.work]]
+name = "2009"
+parent = "work"
+identifier = "work_2009"
+weight = -2009
+
+[[menu.work]]
+name = "2008"
+parent = "work"
+identifier = "work_2008"
+weight = -2008
+
+[[menu.work]]
+name = "2007"
+parent = "work"
+identifier = "work_2007"
+weight = -2007
+
+[[menu.work]]
+name = "2006"
+parent = "work"
+identifier = "work_2006"
+weight = -2006
+
+[[menu.work]]
+name = "2005"
+parent = "work"
+identifier = "work_2005"
+weight = -2005
+
+[[menu.work]]
+name = "2004"
+parent = "work"
+identifier = "work_2004"
+weight = -2004
+
+[[menu.work]]
+name = "2003"
+parent = "work"
+identifier = "work_2003"
+weight = -2003
+
+[[menu.work]]
+name = "2002"
+parent = "work"
+identifier = "work_2002"
+weight = -2002
+
+[[menu.work]]
+name = "2001"
+parent = "work"
+identifier = "work_2001"
+weight = -2001
+
+[[menu.work]]
+name = "2000"
+parent = "work"
+identifier = "work_2000"
+weight = -2000
+
+[[menu.work]]
+name = "1999"
+parent = "work"
+identifier = "work_1999"
+weight = -1999
+
+[[menu.work]]
+name = "1998"
+parent = "work"
+identifier = "work_1998"
+weight = -1998
+
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "Personal portfolio site of Anthony Luigi Santoro. A place to share my stories from past, current, and new adventures."
+  copyright = "&copy;2019 Anthony Luigi Santoro"
+  sidebarAbout = [
+    "Personal portfolio site of Anthony Luigi Santoro. A place to share past, current, and new adventures.",
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "santororock@gmail.com"
+  image_social = "img/santoroland_social.jpg"
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = ""
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Get in touch"
+  url = "contact/"
+
+
+
+
+
+
+
+  [params.social]
+  #facebook      = "full page or profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  email         = "santororock@gmail.com"
+  #twitter       = "full profile url in twitter"
+  linkedin      = "https://www.linkedin.com/in/anthony-santoro-4223821"
+  imdb          = "http://www.imdb.com/name/nm2182150/"
+  #stackoverflow = "full profile url in stackoverflow"
+  #instagram     = "full profile url in instagram"
+
+
+  [params.social.share]
+  #facebook      = "full page or profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  email         = "santororock@gmail.com"
+  #twitter       = "full profile url in twitter"
+  linkedin      = "https://www.linkedin.com/in/anthony-santoro-4223821"
+  imdb          = "http://www.imdb.com/name/nm2182150/"
+  #stackoverflow = "full profile url in stackoverflow"
+  #instagram     = "full profile url in instagram"

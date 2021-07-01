@@ -1,0 +1,80 @@
+<!-- scripts that came with the theme -->
+<script src="{{ "js/jquery-latest.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.detect_swipe.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.cookie.min.js" | absURL }}"> </script>
+<script src="{{ "js/jquery.scrollTo.min.js" | absURL }}"></script>
+<script src="{{ "js/masonry.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/imagesloaded.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/owl.carousel.min.js" | absURL }}"></script>
+<script src="{{ "js/front.min.js" | absURL }}"></script>
+<script src="{{ "js/header-text.min.js" | absURL }}"></script>
+
+
+
+<!-- featherlightGallery bits JS -->
+<script src="{{ "featherlight/featherlight.min.js" | absURL }}"></script>
+<script src="{{ "featherlight/featherlight.gallery.min.js" | absURL }}"></script>
+<script src="{{ "js/fluid_img.min.js" | absURL }}"></script>
+
+
+<!-- bLazy -->
+<script src="{{ "js/blazy.min.js" | absURL }}"></script>
+<script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+</script>
+
+
+<script>
+	/*BE LAZY*/
+	;(function() {
+		if('ontouchstart' in document.documentElement) {
+			document.querySelector('.js-ex').setAttribute('style', 'overflow-x: scroll;');
+			document.querySelector('.html-ex').setAttribute('style', 'overflow-x: scroll;');
+		}
+		var bLazy = new Blazy({
+			breakpoints: [{
+					width: 420, // max-width
+					src: 'data-src-small'
+				}]
+		  , success: function(element){
+				setTimeout(function(){
+					var parent = element.parentNode;
+					parent.className = parent.className.replace(/\bloading\b/,'');
+				}, 200);
+			}
+		});
+	})();
+
+	</script>
+
+
+
+
+<!-- fittext for site title -->
+<script>
+  var bLazy = new Blazy({
+  breakpoints: [{
+                width: 420 // Max-width
+                , src: 'data-src-small'
+                }]
+  , success: function(element){
+  setTimeout(function(){
+// We want to remove the loader gif now.
+// First we find the parent container
+// then we remove the "loading" class which holds the loader image
+var parent = element.parentNode;
+parent.className = parent.className.replace(/\bloading\b/,'');
+  }, 200);
+    }
+});
+</script>
+
+
+<script src="{{ "js/jquery.fittext.min.js" | absURL }}"></script>
+<script type="text/javascript">
+	jQuery("#responsive_headline").fitText();
+</script>
