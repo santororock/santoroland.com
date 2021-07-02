@@ -5,7 +5,6 @@
         <div class="row">
           {{ range .Site.Pages.ByWeight }}
             {{ if or ( eq .Type "stuff") ( eq .Type "work") }}
-                <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 masonry-item"> -->
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 masonry-item">
                     <div class="box-masonry">
                         {{ if and (isset .Params "image") .Params.image }}
@@ -17,9 +16,6 @@
                             {{ $src := .Params.image }}
                             {{ $config := imageConfig (printf "/static/%s" $src) }}
                             {{ $file := (printf "/static/%s.quantized" .Params.image) }}
-
-                              <!-- <img src="{{ .Params.image }}" class="img-responsive" alt="..." width="{{$config.Width}}" height="{{$config.Height}}"> -->
-                              <!-- <img src="data:image/gif;base64,{{readFile $file}}" class="img-responsive" alt="..." width="{{$config.Width}}" height="{{$config.Height}}"> -->
                               <img class="b-lazy img-responsive" src="data:image/gif;base64,{{readFile $file}}" data-src="{{ .Params.image }}" alt="..." width="{{$config.Width}}" height="{{$config.Height}}"/>
                           </a>
                         {{ end }}
