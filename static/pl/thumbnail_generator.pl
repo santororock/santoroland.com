@@ -51,7 +51,7 @@ use File::Remove 'remove';
 ###################
 my $IMAGE_MAGICK_ROOT = "C:/Program Files/ImageMagick-7.0.7-Q16";
 
-my $SITE_ROOT = "D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland";
+my $SITE_ROOT = "D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland.com";
 
 
 
@@ -74,7 +74,7 @@ sub create_gallery_markdown
 
    # create the 'html'
    my $html = "{{< gallery\n";
-   my ($html_folder_path) = $dir_to_open =~ m/(\/img.*)/; #D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland/static/img/stuff/all-this-useless-beauty/gallery01
+   my ($html_folder_path) = $dir_to_open =~ m/(\/img.*)/; #D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland.com/static/img/stuff/all-this-useless-beauty/gallery01
    $html .= "\t\"$html_folder_path\"\n";
 
    foreach my $el (@dir_contents)

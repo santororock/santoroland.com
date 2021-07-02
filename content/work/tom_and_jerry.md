@@ -3,18 +3,20 @@ title = ": Tom and Jerry"
 draft = false
 date = 2021-02-26T16:14:29-04:00
 showonlyimage = false
-image = "img/work/tom_and_jerry/tom_and_jerry_header.jpg"
+image = "img/work/tom_and_jerry/tom_and_jerry_header_small.jpg"
 tags = ["",""]
-summary = "The Tom and Jerry VFX production blog post."
+summary = ""
 weight = -20210226
 [menu]
   [menu.work]
     parent = "work_2021"
 +++
 
-{{< image src="/img/work/tom_and_jerry/tom_and_jerry_post_image_001.jpg" thumb="/img/work/tom_and_jerry/thumb_tom_and_jerry_post_image_001.jpg" caption="Tom & Jerry Article Header Image" >}}
+Tom and Jerry was an interesting film to work on! 2D Animation in live a live action feature. It had been years since working on a project like this. Framestore had the entirty of the charecter work with London leading and Montreal taking the backseat so to speak. London had the lion's share of the work, and Montreal a little less. The split was 60/40 I think. London's development and marketing team had spent nearly 2 years before production started wooing the clients with motion tests and style tests....etc. So, by the time Montreal joined the team in October 2019, the film was well into production with few unknowns.
 
-Tom and Jerry was an interesting film to work on. Framestore had the entirty of project with London leading and Montreal taking the backseat so to speak. London had the lion's share of the work, and Montreal a little less. The split was 60/40 I think. London's development and marketing team had spent nearly 2 years before production started wooing the clients with motion tests and style tests....etc. So, by the time Montreal joined the team in October 2019, the film was well into production with few unknowns.
+
+{{< image src="/img/work/tom_and_jerry/tom_and_jerry_post_image_001.jpg" thumb="/img/work/tom_and_jerry/thumb_tom_and_jerry_post_image_001.jpg" caption="" >}}
+
 
 The largest challenge with any 2D style animated feature for the artists is often continuity for the charectors and style. It litterally takes a small army of artists to model, rig, animate, render, and assemble the images for the big screen. Each person bringing thier past expierences and experties to the specific piece of the puzzle they are charged to complete.
 
