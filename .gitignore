@@ -1,10 +1,7 @@
 # ignore all the quantize files generated for the image thumbnails
 *.quantized
 
-# ignor the crazy dzi files
+# ignore the crazy dzi files
 *.dzi
 
-# ignore all the various image file directories for the content
-static/img/work/
-static/img/stuff/
 
