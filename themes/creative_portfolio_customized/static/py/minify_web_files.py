@@ -50,7 +50,7 @@ def main():
     cwd = os.getcwd()
 
     # build the root folder to recurse into
-    root_folder = os.path.abspath("{0}/../..".format(cwd))
+    root_folder = os.path.abspath("{0}/..".format(cwd))
 
 
     print("Looking for files to min...")
