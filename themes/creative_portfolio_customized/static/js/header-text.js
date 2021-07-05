@@ -112,6 +112,12 @@ function changeText() {
         "Like a long forgotten letter, re-read through the looking glass of time.",
         "A society of people celibrating movement at thier own pace.",
         "Where even in hindsight, things really aren't 20/20.",
+        "A place to Love the people we were and grow into majestic beasts we wish to be.",
+        "A gentle timeout to live in the ever-present now.",
+        "Merging anxiety and gratitude to make peace.",
+        "Today's headline: \"Seven and a Half Billion People Got On With It Yesterday.\"",
+        "Because first and foremost, this is all a \'human\' adventure:)",
+        "Little bits of modesty and audacity in somewhat equal measure."
     ];
     var rand = Math.floor(Math.random() * phrases.length);
     var el = phrases[rand];

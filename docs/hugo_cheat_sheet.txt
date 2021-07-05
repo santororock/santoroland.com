@@ -81,11 +81,11 @@ writing out the static site files:
   3. output can be uploaded to web server
 
 Creating thumbnails:
-perl D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland/static/pl/thumbnail_generator_v0007.pl
+perl D:/data/web/www.santoroland.com_3.1/Hugo/Sites/santoroland/static/pl/thumbnail_generator.pl
 
 Creating min css and js files
-1. cd D:\data\web\www.santoroland.com_3.0\Hugo\Sites\santoroland\static\py
-2. python .\minify_web_files_v0001.py
+1. cd D:\data\web\www.santoroland.com_3.1\Hugo\Sites\santoroland.com\themes\creative_portfolio_customized\static\py
+2. python minify_web_files.py
 
 Create the zgip files:
 cd D:/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland_deploy/live_site

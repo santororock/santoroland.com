@@ -48,9 +48,10 @@ def main():
 
     # Get the current working directory
     cwd = os.getcwd()
+    path = "D:/data/web/www.santoroland.com_3.1/Hugo/Sites/santoroland.com"
 
     # build the root folder to recurse into
-    root_folder = os.path.abspath("{0}/..".format(cwd))
+    root_folder = os.path.abspath(path)
 
 
     print("Looking for files to min...")
