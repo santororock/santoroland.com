@@ -1,18 +1,17 @@
-+++
-date = "2011-10-11T06:53:08-05:00"
-title = ": Dex Phonebook"
-summary = "Dex Commercials 2011 Produced by Curious Pictures"
-tags = ["Curious Pictures","DEX","animation","commercial","VFX","aftereffects"]
-showonlyimage = false
-draft = false
-weight = -20111011
-image = "img/work/dex-phonebook/dex-phonebook_header.jpg"
-
-[menu]
-  [menu.work]
-    parent = "work_2011"
-
-+++
+---
+date: "2011-10-11T06:53:08-05:00"
+title: "Dex Phonebook"
+summary: "Dex Commercials 2011 Produced by Curious Pictures"
+tags: ["Curious Pictures","DEX","animation","commercial","VFX","aftereffects"]
+showonlyimage: false
+draft: false
+image: "img/work/dex-phonebook/dex-phonebook_header.jpg"
+menu:
+  work:
+    parent: '2011'
+    weight: -20111011
+    name: "Dex Phonebook"
+---
 
 {{< youtube 1jfssxXQ7yU >}}
 

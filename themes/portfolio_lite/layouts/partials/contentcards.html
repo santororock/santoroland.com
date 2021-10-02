@@ -1,0 +1,39 @@
+
+<div class="mason_grid_container">
+{{ $counter := 0 }}
+{{ range .Site.Pages.ByWeight }}
+    {{ if or ( eq .Type "stuff") ( eq .Type "work") }}    
+        {{ $counter = add $counter 1 }}
+    
+        <div class="card item{{ $counter }}">
+            
+            <figure class="card__thumbnail">
+                {{ if and (isset .Params "image") .Params.image }}
+                    <a href="{{ .Permalink }}">
+                        {{ $src := .Params.image }}
+                        {{ $config := imageConfig (printf "/static/%s" $src) }}
+                        {{ $file := (printf "/static/%s.quantized" .Params.image) }}
+                        <img class="b-lazy img-responsive card__image" src="data:image/gif;base64,{{readFile $file}}" data-src="{{ .Params.image }}" alt="..." width="{{$config.Width}}" height="{{$config.Height}}"/>
+                    </a>
+                {{end}}
+            </figure>
+            <div class="card__content">
+                <header class="card__title">
+                     <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </header>
+                <date class="card__date">{{ .Date.Format "Mon, Jan 2, 2006" }}</date>
+                <summary class="card__summary">
+                    {{ if gt (len .Summary) 150 }}
+                      <p>{{slicestr .Summary 0 150}} <a href="{{ .Permalink }}">... Read More</a></p>
+                    {{ else }}
+                      <p>{{ .Summary }}</p>
+                    {{ end }}
+                </summary>
+            </div>
+        </div>
+
+    {{ end }}
+  {{ end }}
+</div>
+
+

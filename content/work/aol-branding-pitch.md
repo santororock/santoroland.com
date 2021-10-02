@@ -1,16 +1,17 @@
-+++
-title = ": AOL Branding Pitch"
-draft = false
-weight = -20050105
-tags = ["Curious Pictures","AOL","comercial","animation"]
-date = "2005-01-05T07:17:01-05:00"
-showonlyimage = false
-summary = "AOL Internal Pitch for new branding."
-image = "img/work/aol-branding-pitch/aol-branding-pitch_header.jpg"
-[menu.work]
-parent = "work_2005"
-
-+++
+---
+title: "AOL Branding Pitch"
+draft: false
+tags: ["Curious Pictures","AOL","comercial","animation"]
+date: "2005-01-05T07:17:01-05:00"
+showonlyimage: false
+summary: "AOL Internal Pitch for new branding."
+image: "img/work/aol-branding-pitch/aol-branding-pitch_header.jpg"
+menu:
+  work:
+    parent: '2005'
+    weight: -20050105
+    name: "AOL Branding Pitch"
+---
 
 {{< youtube 8pbv2l1mhEQ >}}
 

@@ -1,15 +1,17 @@
-+++
-date = "2010-11-02T18:49:49-05:00"
-summary = "Motion Graphics test for Aflac"
-tags = ["Curious Pictures","Motion Graphics","animation","cg"]
-image = "img/work/aflac-motion-test/aflac-motion-test_header.jpg"
-showonlyimage = false
-draft = false
-title = ": Aflac Motion Test"
-weight = -20101102
-[menu.work]
-parent = "work_2010"
-+++
+---
+date: "2010-11-02T18:49:49-05:00"
+draft: false
+summary: "Motion Graphics test for Aflac"
+tags: ["Curious Pictures","Motion Graphics","animation","cg"]
+image: "img/work/aflac-motion-test/aflac-motion-test_header.jpg"
+showonlyimage: false
+title: "Aflac Motion Test"
+menu:
+  work:
+    parent: '2010'
+    weight: -20101102
+    name: "Aflac Motion Test"
+---
 
 
 {{< youtube bly-kWOLWNA >}}

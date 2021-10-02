@@ -1,18 +1,17 @@
-+++
-date = "2007-08-29T07:21:33-05:00"
-draft = false
-title = ": CHS"
-weight = -20070829
-summary = "CHS commercial - 2007 Produced at Curious Pictures"
-tags = ["Curious Pictures","CHS","commercial","maya","aftereffects","animation"]
-image = "img/work/chs/chs_header.jpg"
-showonlyimage = false
-
-[menu]
-  [menu.work]
-    parent = "work_2007"
-
-+++
+---
+date: "2007-08-29T07:21:33-05:00"
+draft: false
+title: "CHS"
+summary: "CHS commercial - 2007 Produced at Curious Pictures"
+tags: ["Curious Pictures","CHS","commercial","maya","aftereffects","animation"]
+image: "img/work/chs/chs_header.jpg"
+showonlyimage: false
+menu:
+  work:
+    parent: '2007'
+    weight: -20070829
+    name: "CHS"
+---
 
 {{< youtube YSwAgojHt74 >}}
 

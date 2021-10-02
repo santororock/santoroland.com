@@ -1,18 +1,17 @@
-+++
-summary = "Detroit Zoo Commercial 2010 Produced by Curious Pictures."
-title = ": Detroit Zoo"
-draft = false
-weight = -20100609
-date = "2010-06-09T07:10:44-05:00"
-tags = ["Curious Pictures","animation","commercial"]
-image = "img/work/detroit-zoo/detroit-zoo_header.jpg"
-showonlyimage = false
-
-[menu]
-  [menu.work]
-    parent = "work_2010"
-
-+++
+---
+summary: "Detroit Zoo Commercial 2010 Produced by Curious Pictures."
+title: "Detroit Zoo"
+draft: false
+date: "2010-06-09T07:10:44-05:00"
+tags: ["Curious Pictures","animation","commercial"]
+image: "img/work/detroit-zoo/detroit-zoo_header.jpg"
+showonlyimage: false
+menu:
+  work:
+    parent: '2010'
+    weight: -20100609
+    name: "Detroit Zoo"
+---
 
 {{< youtube dUCIQ23M8vE >}}
 

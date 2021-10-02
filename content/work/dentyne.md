@@ -1,18 +1,17 @@
-+++
-tags = ["Curious Pictures","Dentyne","zoomquilt","animation","aftereffects"]
-showonlyimage = false
-draft = false
-weight = -20080417
-summary = ""
-image = "img/work/dentyne/dentyne_header.jpg"
-date = "2008-04-17T08:28:01-05:00"
-title = ": Dentyne ZoomQuilt"
-
-[menu]
-  [menu.work]
-    parent = "work_2008"
-
-+++
+---
+tags: ["Curious Pictures","Dentyne","zoomquilt","animation","aftereffects"]
+showonlyimage: false
+draft: false
+summary: ""
+image: "img/work/dentyne/dentyne_header.jpg"
+date: "2008-04-17T08:28:01-05:00"
+title: "Dentyne ZoomQuilt"
+menu:
+  work:
+    parent: '2008'
+    weight: -20080417
+    name: "Dentyne ZoomQuilt"
+---
 
 {{< youtube Lb5EiLfmVqg >}}
 

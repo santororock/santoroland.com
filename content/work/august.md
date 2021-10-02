@@ -1,18 +1,17 @@
-+++
-weight = -20071104
-summary = "August Auditorium VFX Breakdown."
-tags = ["Curious Pictures","Film","VFX","Liveaction","Breakdown"]
-title = ": August"
-draft = false
-date = "2007-11-04T11:13:15-05:00"
-showonlyimage = false
-image = "img/work/august/august_header.jpg"
-
-[menu]
-  [menu.work]
-    parent = "work_2007"
-
-+++
+---
+summary: "August Auditorium VFX Breakdown."
+tags: ["Curious Pictures","Film","VFX","Liveaction","Breakdown"]
+title: "August"
+draft: false
+date: "2007-11-04T11:13:15-05:00"
+showonlyimage: false
+image: "img/work/august/august_header.jpg"
+menu:
+  work:
+    parent: '2007'
+    weight: -20071104
+    name: "August"
+---
 
 {{< youtube YLlYXvKaJ1c >}}
 

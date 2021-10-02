@@ -1,18 +1,17 @@
-+++
-summary = "Bodum Commercial - 2011 Produced at Curious Pictures"
-tags = ["Curious Pictures","commercial","vfx","aftereffects"]
-date = "2011-09-23T08:03:26-05:00"
-weight = -20110923
-title = ": Bodum"
-image = "img/work/bodum/bodum_header.jpg"
-showonlyimage = false
-draft = false
-
-[menu]
-  [menu.work]
-    parent = "work_2011"
-
-+++
+---
+summary: "Bodum Commercial - 2011 Produced at Curious Pictures"
+tags: ["Curious Pictures","commercial","vfx","aftereffects"]
+date: "2011-09-23T08:03:26-05:00"
+title: "Bodum"
+image: "img/work/bodum/bodum_header.jpg"
+showonlyimage: false
+draft: false
+menu:
+  work:
+    parent: '2011'
+    weight: -20110923
+    name: "Bodum"
+---
 
 {{< youtube OqTq3NpuVts >}}
 

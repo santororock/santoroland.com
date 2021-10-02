@@ -1,0 +1,10 @@
+{{ define "content" }}
+<div class="s-layout__content-container-single">
+  <div class="s-layout__content-title-single">
+    <div class="content__title"><a href="/">SANTOROLAND</a> > {{ .Title }}</div>
+  </div>
+  <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+  {{ .Content }}
+  {{ template "_internal/disqus.html" . }}
+</div>
+{{ end }}

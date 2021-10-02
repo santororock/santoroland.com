@@ -71,12 +71,12 @@ Creating new content:
   3. edit the contents in atom
 
 Running the hugo local host server:
-  1. cd D:\data\web\www.santoroland.com_3.0\Hugo\Sites\santoroland
+  1. cd D:\data\web\www.santoroland.com_3.1\Hugo\Sites\santoroland.com
   2. run command: hugo server --noHTTPCache --ignoreCache --disableFastRender
   3. in chrome enter address: localhost:1313
 
 writing out the static site files:
-  1. in git bash, cd into site directory (santoroland): cd /d/data/web/www.santoroland.com_3.0/Hugo/Sites/santoroland
+  1. in git bash, cd into site directory (santoroland): cd /d/data/web/www.santoroland.com_3.1/Hugo/Sites/santoroland
   2. run command: hugo  -d ../santoroland_deploy/live_site
   3. output can be uploaded to web server
 

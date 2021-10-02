@@ -1,17 +1,17 @@
-
-+++
-title = ": Crimes of Grindenwald"
-draft = false
-date = 2018-11-16T16:14:29-04:00
-showonlyimage = false
-image = "img/work/crimes_of_grindenwald/crimes_of_grindenwald_header.jpg"
-tags = ["",""]
-summary = ""
-weight = -20181116
-[menu]
-  [menu.work]
-    parent = "work_2018"
-+++
+---
+title: "Crimes of Grindenwald"
+draft: false
+date: 2018-11-16T16:14:29-04:00
+showonlyimage: false
+image: "img/work/crimes_of_grindenwald/crimes_of_grindenwald_header.jpg"
+tags: ["",""]
+summary: ""
+menu:
+  work:
+    parent: '2018'
+    weight: -20181116
+    name: "Crimes of Grindenwald"
+---
 
 
 {{< image src="/img/work//crimes_of_grindenwald/crimes_of_grindenwald_opening_title_graphic.jpg" thumb="/img/work/crimes_of_grindenwald/crimes_of_grindenwald_opening_title_graphic.jpg" caption="Crimes of Grindenwald opening title card." >}}

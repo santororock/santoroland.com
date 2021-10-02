@@ -1,15 +1,5 @@
 # theme.toml template for a Hugo theme
 
-baseurl = "https://www.santoroland.com/"
-title = "santoroland"
-
-theme = "portfolio_lite"
-languageCode = "en-us"
-
-
-
-
-
 name = "Portfolio_lite"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
@@ -24,4 +14,7 @@ min_version = "0.41.0"
   homepage = "https://www.santoroland.com"
 
 
+[params]
+  author = "Nikola Tesla"
+  description = "Tesla's Awesome Hugo Site"
 

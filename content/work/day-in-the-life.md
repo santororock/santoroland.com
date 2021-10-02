@@ -1,18 +1,17 @@
-+++
-date = "2011-07-15T07:13:24-05:00"
-summary = "Opening to A Day in the Life."
-tags = ["Curious Pictures","CG","Rigging","title design","maya","aftereffects"]
-weight = -20110715
-image = "img/work/day-in-the-life/day-in-the-life_header.jpg"
-showonlyimage = false
-draft = false
-title = ": A Day in the Life"
-
-[menu]
-[menu.work]
-parent = "work_2011"
-
-+++
+---
+date: "2011-07-15T07:13:24-05:00"
+summary: "Opening to A Day in the Life."
+tags: ["Curious Pictures","CG","Rigging","title design","maya","aftereffects"]
+image: "img/work/day-in-the-life/day-in-the-life_header.jpg"
+showonlyimage: false
+draft: false
+title: "A Day in the Life"
+menu:
+  work:
+    parent: '2011'
+    weight: -20110715
+    name: "A Day in the Life"
+---
 
 {{< youtube HWI-O5zckJk >}}
 

@@ -1,15 +1,17 @@
-+++
-title = ": Barbie Diaries"
-draft = false
-date = 2006-05-26T09:47:15-04:00
-showonlyimage = false
-image = "img/work/barbie-diaries/barbie-diaries_header.jpg"
-tags = ["",""]
-summary = ""
-weight = -20060526
-[menu.work]
-parent = "work_2006"
-+++
+---
+title: "Barbie Diaries"
+draft: false
+date: 2006-05-26T09:47:15-04:00
+showonlyimage: false
+image: "img/work/barbie-diaries/barbie-diaries_header.jpg"
+tags: ["",""]
+summary: ""
+menu:
+  work:
+    parent: '2006'
+    weight: -20060526
+    name: "Barbie Diaries"
+---
 
 
 

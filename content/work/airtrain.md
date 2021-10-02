@@ -1,17 +1,17 @@
-+++
-summary = "Promotional for upcoming Air Train survice to JFK."
-image = "img/work/airtrain/airtrain_header.jpg"
-tags = ["commercial","cg","non-photorealistic","animation"]
-showonlyimage = false
-draft = false
-weight = -20020125
-date = "2002-01-25T19:46:23-05:00"
-title = ": AirTrain"
-
-[menu]
-[menu.work]
-parent = "work_2002"
-+++
+---
+summary: "Promotional for upcoming Air Train survice to JFK."
+image: "img/work/airtrain/airtrain_header.jpg"
+tags: ["commercial","cg","non-photorealistic","animation"]
+showonlyimage: false
+draft: false
+date: "2002-01-25T19:46:23-05:00"
+title: "AirTrain"
+menu:
+  work:
+    parent: '2002'
+    weight: -20020125
+    name: "AirTrain"
+---
 
 {{< youtube f6Sh8DhxNLo >}}
 

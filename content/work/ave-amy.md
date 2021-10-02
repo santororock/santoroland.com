@@ -1,18 +1,17 @@
-+++
-image = "img/work/ave-amy/ave-amy_header.jpg"
-date = "1999-06-28T20:11:10-05:00"
-showonlyimage = false
-draft = false
-weight = -19990628
-tags = ["Ave.Amy","Curious Pictures","animation","CG"]
-summary = "Ave Amy Pilot Episode - 1999"
-title = ": Ave Amy"
-
-[menu]
-[menu.work]
-parent = "work_1999"
-
-+++
+---
+image: "img/work/ave-amy/ave-amy_header.jpg"
+date: "1999-06-28T20:11:10-05:00"
+showonlyimage: false
+draft: false
+tags: ["Ave.Amy","Curious Pictures","animation","CG"]
+summary: "Ave Amy Pilot Episode - 1999"
+title: "Ave Amy"
+menu:
+  work:
+    parent: '1999'
+    weight: -19990628
+    name: "Ave Amy"
+---
 
 {{< youtube QyHL4QSAGQ8 >}}
 

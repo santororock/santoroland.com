@@ -1,18 +1,17 @@
-+++
-date = "2007-10-17T06:37:57-05:00"
-draft = false
-summary = "Airmiles commercial 2007 - Produced at Curious Pictures."
-image = "img/work/airmiles/airmiles_header.jpg"
-showonlyimage = false
-weight = -20071010
-tags = ["Curious Pictures","Airmiles","commercial","vfx","compositing"]
-title = ": Airmiles"
-
-[menu]
-[menu.work]
-parent = "work_2007"
-
-+++
+---
+date: "2007-10-17T06:37:57-05:00"
+draft: false
+summary: "Airmiles commercial 2007 - Produced at Curious Pictures."
+tags: ["Curious Pictures","Airmiles","commercial","vfx","compositing"]
+image: "img/work/airmiles/airmiles_header.jpg"
+showonlyimage: false
+title: "Airmiles"
+menu:
+  work:
+    parent: '2007'
+    weight: -20071010
+    name: "Airmiles"
+---
 
 {{< youtube rukAdw2YnoU >}}
 

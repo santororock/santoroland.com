@@ -1,18 +1,17 @@
-+++
-image = "img/work/att-uncf/att-uncf_header.jpg"
-showonlyimage = false
-weight = -20100829
-summary = "ATT UNCF commercial - 2010"
-tags = ["Curious Pictures","motion graphics","vfx"]
-draft = false
-date = "2010-08-29T07:50:10-05:00"
-title = ": ATT UNCF"
-
-[menu]
-[menu.work]
-parent = "work_2010"
-
-+++
+---
+image: "img/work/att-uncf/att-uncf_header.jpg"
+showonlyimage: false
+summary: "ATT UNCF commercial - 2010"
+tags: ["Curious Pictures","motion graphics","vfx"]
+draft: false
+date: "2010-08-29T07:50:10-05:00"
+title: "ATT UNCF"
+menu:
+  work:
+    parent: '2010'
+    weight: -20100829
+    name: "ATT UNCF"
+---
 
 {{< youtube wucUOqnuIjI >}}
 

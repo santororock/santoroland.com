@@ -1,19 +1,17 @@
-+++
-tags = ["",""]
-image = "img/work/bravo-fashion/bravo-fashion_header.jpg"
-weight = -20101022
-summary = "Opening Credits for Bravo's Fashion reality show - 2010. Produced at Curious Pictures."
-date = "2010-10-22T08:59:25-05:00"
-title = ": Bravo Fashion"
-showonlyimage = false
-draft = false
-
-[menu]
-
-  [menu.work]
-    parent = "work_2010"
-
-+++
+---
+tags: ["",""]
+image: "img/work/bravo-fashion/bravo-fashion_header.jpg"
+summary: "Opening Credits for Bravo's Fashion reality show - 2010. Produced at Curious Pictures."
+date: "2010-10-22T08:59:25-05:00"
+title: "Bravo Fashion"
+showonlyimage: false
+draft: false
+menu:
+  work:
+    parent: '2010'
+    weight: -20101022
+    name: "Bravo Fashion"
+---
 
 {{< youtube esOGEDQpVOc >}}
 

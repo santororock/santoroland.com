@@ -1,15 +1,17 @@
-+++
-title = ": Bladerunner 2049"
-draft = false
-date = 2017-12-29T14:49:13-04:00
-showonlyimage = false
-image = "img/work/bladerunner2049/bladerunner2049_header.jpg"
-tags = ["VFX","film",'bladerunner2049','bladerunner','nuke','compositing']
-summary = "Breakdown of sequences lead for the 2017 film Bladerunner 2049."
-weight = -20171225
-[menu.work]
-parent = "work_2017"
-+++
+---
+title: "Bladerunner 2049"
+draft: false
+date: 2017-12-29T14:49:13-04:00
+showonlyimage: false
+image: "img/work/bladerunner2049/bladerunner2049_header.jpg"
+tags: ["VFX","film",'bladerunner2049','bladerunner','nuke','compositing']
+summary: "Breakdown of sequences lead for the 2017 film Bladerunner 2049."
+menu:
+  work:
+    parent: '2017'
+    weight: -20171225
+    name: "Bladerunner 2049"
+---
 
 
 {{< image src="/img/work/bladerunner2049/bladerunner2049_opening_title_graphic.jpg" thumb="/img/work/bladerunner2049/thumb_bladerunner2049_opening_title_graphic.jpg" caption="Bladerunner 2049 opening title card." >}}

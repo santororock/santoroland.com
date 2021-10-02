@@ -1,15 +1,17 @@
-+++
-title = ": Computer Graphics"
-draft = false
-date = 1998-12-25T10:26:11-04:00
-showonlyimage = false
-image = "img/work/cgi/cgi_header.jpg"
-tags = ["",""]
-summary = ""
-weight = -19981225
-[menu.work]
-parent = "work_1998"
-+++
+---
+title: "Computer Graphics"
+draft: false
+date: 1998-12-25T10:26:11-04:00
+showonlyimage: false
+image: "img/work/cgi/cgi_header.jpg"
+tags: ["",""]
+summary: ""
+menu:
+  work:
+    parent: '1998'
+    weight: -19981225
+    name: "Computer Graphics"
+---
 
 
 

@@ -1,18 +1,17 @@
-+++
-showonlyimage = false
-draft = false
-summary = ""
-tags = ["",""]
-image = "img/work/canon-power-shot/canon-power-shot_header.jpg"
-weight = -20090513
-date = "2009-05-13T06:47:21-05:00"
-title = ": Canon Powershot"
-
-[menu]
-[menu.work]
-parent = "work_2009"
-
-+++
+---
+showonlyimage: false
+draft: false
+summary: ""
+tags: ["",""]
+image: "img/work/canon-power-shot/canon-power-shot_header.jpg"
+date: "2009-05-13T06:47:21-05:00"
+title: "Canon Powershot"
+menu:
+  work:
+    parent: '2009'
+    weight: -20090513
+    name: "Canon Powershot"
+---
 
 {{< youtube A-n5OcJOIPs >}}
 

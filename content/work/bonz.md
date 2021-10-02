@@ -1,18 +1,17 @@
-+++
-tags = ["Curious Pictures","Bonz","Toys","Toy Fair"]
-image = "img/work/bonz/bonz_header.jpg"
-weight = -19990118
-summary = ""
-showonlyimage = false
-draft = false
-date = "1999-01-18T18:04:16-05:00"
-title = ": Bonz"
-
-[menu]
-  [menu.work]
-    parent = "work_1999"
-
-+++
+---
+tags: ["Curious Pictures","Bonz","Toys","Toy Fair"]
+image: "img/work/bonz/bonz_header.jpg"
+summary: ""
+showonlyimage: false
+draft: false
+date: "1999-01-18T18:04:16-05:00"
+title: "Bonz"
+menu:
+  work:
+    parent: '1999'
+    weight: -19990118
+    name: "Bonz"
+---
 
 {{< youtube KBa8kaX4vRw >}}
 

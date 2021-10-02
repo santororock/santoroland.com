@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {{- partial "head.html" . -}}
+    </head>
+    <body>
+        <div class="s-layout">
+ 
+            <!-- Sidebar -->
+            <div class="s-layout__sidebar">
+                {{- partial "sidenav.html" . -}}
+            </div>
+
+            <!-- content -->
+            <main class="s-layout__content">
+              {{ block "content" . }}
+                <!-- site content/cards -->
+              {{ end }}
+            </main>
+        
+        </div>
+
+        <!-- scripts -->
+        {{- partial "scripts.html" . -}}
+
+    </body>
+</html>

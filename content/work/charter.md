@@ -1,16 +1,17 @@
-+++
-date = "2010-05-05T11:20:29-05:00"
-title = ": Charter"
-draft = false
-summary = "Charter Commercial produced by Curious Pictures."
-tags = ["animation","Curious Pictures"]
-image = "img/work/charter/charter_header.jpg"
-showonlyimage = false
-weight = -20100505
-[menu.work]
-parent = "work_2010"
-
-+++
+---
+date: "2010-05-05T11:20:29-05:00"
+title: "Charter"
+draft: false
+summary: "Charter Commercial produced by Curious Pictures."
+tags: ["animation","Curious Pictures"]
+image: "img/work/charter/charter_header.jpg"
+showonlyimage: false
+menu:
+  work:
+    parent: '2010'
+    weight: -20100505
+    name: "Charter"
+---
 
 {{< youtube aFVWKSAWmYM >}}
 

@@ -1,18 +1,18 @@
-+++
-weight = -20110907
-title = ": Comic Con"
-summary = "ComicCon Version String out - 2011 Title opening for Morgan Spurlock comic con. Produced by Curious Pictures."
-tags = ["Curious Pictures","ComicCon","aftereffects","title design"]
-image = "img/work/comic-con/comic-con_header.jpg"
-showonlyimage = false
-draft = false
-date = "2011-09-07T08:27:49-05:00"
+---
+title: "Comic Con"
+summary: "ComicCon Version String out - 2011 Title opening for Morgan Spurlock comic con. Produced by Curious Pictures."
+tags: ["Curious Pictures","ComicCon","aftereffects","title design"]
+image: "img/work/comic-con/comic-con_header.jpg"
+showonlyimage: false
+draft: false
+date: "2011-09-07T08:27:49-05:00"
+menu:
+  work:
+    parent: '2011'
+    weight: -20110907
+    name: "Comic Con"
 
-[menu]
-  [menu.work]
-    parent = "work_2011"
-
-+++
+---
 
 {{< youtube nz_86VNa4hE >}}
 

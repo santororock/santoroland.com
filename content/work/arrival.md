@@ -1,18 +1,17 @@
-+++
-date = "2016-09-06T07:21:53-04:00"
-draft = false
-image = "img/work/arrival/arrival_header03.jpg"
-showonlyimage = false
-summary = "Arrival ship disapearing act. Shots produced in Framestore Montreal 2016."
-tags = ["film","arrival","framestore"]
-title = ": Arrival"
-weight = -20160909
-
-[menu]
-  [menu.work]
-    parent = "work_2016"
-
-+++
+---
+date: "2016-09-06T07:21:53-04:00"
+draft: false
+image: "img/work/arrival/arrival_header03.jpg"
+showonlyimage: false
+summary: "Arrival ship disapearing act. Shots produced in Framestore Montreal 2016."
+tags: ["film","arrival","framestore"]
+title: "Arrival"
+menu:
+  work:
+    parent: '2016'
+    weight: -20160909
+    name: "Arrival"
+---
 
 {{< youtube bP9Z2Sp2HTU >}}
 

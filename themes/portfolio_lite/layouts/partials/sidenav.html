@@ -1,0 +1,93 @@
+<a class="s-sidebar__trigger" href="#0">
+    <i class="fas fa-bars fa-2x"></i>
+</a>
+
+
+<nav class="s-sidebar__nav">
+
+   <!-- branding -->
+   <div id="s-sidebar__nav-branding">
+         <img class="s-sidebar__nav-branding-image" src="/img/sidebar_branding.jpg">
+   </div>
+
+    <!-- navigation menu items -->
+    <div id="s-sidebar__nav-menu">
+         <ul class="s-sidebar__nav-ul">
+            <!-- Home (static link) -->
+            <li class="s-sidebar__nav-li">
+               <a class="s-sidebar__nav-link" href="/">
+               <span class="fa-li"><i class="fas fa-home fa-2x"></i></span>
+               <em>Home</em>
+               </a>
+            </li>
+
+            <!-- About (static link) -->
+            <li class="s-sidebar__nav-li">
+               <a class="s-sidebar__nav-link" href="#0">
+                 <span class="fa-li"><i class="fas fa-user fa-2x"></i></span>
+                 <em>About</em>
+               </a>
+            </li>
+
+            <!-- Get In Touch (static link) -->
+            <li class="s-sidebar__nav-li">
+               <a class="s-sidebar__nav-link" href="#0">
+                  <span class="fa-li"><i class="fas fa-envelope fa-2x"></i></span>
+                  <em>Get In Touch</em>
+               </a>
+            </li>
+
+            <!-- navigation work (dynamic items) -->
+            <li class="s-sidebar__nav-li">
+               <a class="s-sidebar__nav-link" href="#0">
+                  <span class="fa-li"><i class="far fa-plus-square fa-2x"></i></span>
+                  <em>Work :</em>
+               </a>
+               <!-- work menu start-->
+               <ul>
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.work.Sort.Reverse }}
+                     {{ if .HasChildren }}
+                        <li>
+                           <a class="s-sidebar__nav-link" href="">
+                              {{ .Pre }}
+                              <em>{{ .Name }}</em>
+                           </a>
+                           <ul>
+                              {{ range .Children }}
+                                 <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>
+                                    <a class="s-sidebar__nav-link" href="{{.URL}}"> 
+                                       <em>{{ .Name }} </em>
+                                    </a>
+                                 </li>
+                              {{ end }}
+                           </ul>
+                     {{ end }}
+                  {{end}}
+               </ul>
+               <!-- sidebar menu end-->
+            </li>
+
+            <!-- Love The Random (dynamic items) -->
+            <li class="s-sidebar__nav-li">
+               <a class="s-sidebar__nav-link" href="#0">
+                  <span class="fa-li"><i class="far fa-plus-square fa-2x"></i></span>
+                  <em>Love The Random :</em>
+               </a>
+            </li>
+         </ul>
+    </div>
+
+
+
+
+
+
+
+    <!-- navigation footer -->
+    <div class="s-sidebar__nav-footer">
+        <div class="s-sidebar__nav-footer-copywrite-date">©{{ now.Format "2006"}}</div> <div class="s-sidebar__nav-footer-copywrite-author">{{ .Site.Author.name }}</div>
+    </div>
+
+
+</nav>

@@ -1,18 +1,17 @@
-+++
-tags = ["Curious Pictures","pitch","maya","painting","animation","aftereffects"]
-image = "img/work/ctc-pitch/ctc-pitch_header.jpg"
-weight = -20081114
-summary = "CTC Pitch - 2008 Produced at Curious Pictures"
-date = "2008-11-14T07:43:28-05:00"
-title = ": CTC Pitch"
-showonlyimage = false
-draft = false
-
-[menu]
-  [menu.work]
-    parent = "work_2008"
-
-+++
+---
+tags: ["Curious Pictures","pitch","maya","painting","animation","aftereffects"]
+image: "img/work/ctc-pitch/ctc-pitch_header.jpg"
+summary: "CTC Pitch - 2008 Produced at Curious Pictures"
+date: "2008-11-14T07:43:28-05:00"
+title: "CTC Pitch"
+showonlyimage: false
+draft: false
+menu:
+  work:
+    parent: '2008'
+    weight: -20081114
+    name: "CTC Pitch"
+---
 
 {{< youtube lYWqT7oS2CY >}}
 

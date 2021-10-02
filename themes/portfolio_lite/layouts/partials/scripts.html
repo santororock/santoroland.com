@@ -1,0 +1,61 @@
+<!-- featherlightGallery bits JS -->
+<script src="{{ "featherlight/featherlight.min.js" | absURL }}"></script>
+<script src="{{ "featherlight/featherlight.gallery.min.js" | absURL }}"></script>
+<script src="{{ "js/fluid_img.min.js" | absURL }}"></script>
+
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/24ab3aefe3.js" crossorigin="anonymous"></script>
+
+
+<!-- magic grid masonry card system -->
+<script src="js/magic-grid.min.js"></script>
+<script> 
+let magicGrid = new MagicGrid({
+  container: '.mason_grid_container',
+  animate: true,
+  gutter: 30,
+  static: true,
+  useMin: true,
+  maxColumns: 4 // Optional. Maximum number of columns. Default: Infinite.
+});
+
+magicGrid.listen();
+</script>
+
+
+
+
+<script src="{{ "js/blazy.min.js" | absURL }}"></script>
+<script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+
+</script>
+
+
+<script>
+;(function() {
+	if('ontouchstart' in document.documentElement) {
+		document.querySelector('.js-ex').setAttribute('style', 'overflow-x: scroll;');
+		document.querySelector('.html-ex').setAttribute('style', 'overflow-x: scroll;');
+	}
+	var bLazy = new Blazy({
+		breakpoints: [{
+				width: 420, // max-width
+				src: 'data-src-small'
+			}]
+	  , success: function(element){
+			setTimeout(function(){
+				var parent = element.parentNode;
+				parent.className = parent.className.replace(/\bloading\b/,'');
+			}, 200);
+		}
+	});
+})();
+
+
+</script>

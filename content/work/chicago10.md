@@ -1,18 +1,17 @@
-+++
-date = "2007-09-05T06:31:01-05:00"
-summary = "Chicago 10 documentary about the Chicago 10 trials."
-image = "img/work/chicago10/chicago10_header.jpg"
-draft = false
-title = ": Chicago 10"
-weight = -20070905
-tags = ["Curious Pictures","Chicago 10","npr","animation","mocap","maya","aftereffects"]
-showonlyimage = false
-
-[menu]
-[menu.work]
-parent = "work_2007"
-
-+++
+---
+date: "2007-09-05T06:31:01-05:00"
+summary: "Chicago 10 documentary about the Chicago 10 trials."
+image: "img/work/chicago10/chicago10_header.jpg"
+draft: false
+title: "Chicago 10"
+tags: ["Curious Pictures","Chicago 10","npr","animation","mocap","maya","aftereffects"]
+showonlyimage: false
+menu:
+  work:
+    parent: '2007'
+    weight: -20070905
+    name: "Chicago 10"
+---
 
 {{< youtube l9Ipv1Imn2M >}}
 

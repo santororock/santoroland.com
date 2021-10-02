@@ -1,18 +1,17 @@
-+++
-summary = "Comedy Is Dangerous - Comedy Central - 2005. Produced at Curious Pictures."
-image = "img/work/comedy-central/comedy-central_header.jpg"
-showonlyimage = false
-draft = false
-weight = -20051010
-date = "2005-10-10T07:04:26-05:00"
-title = ": Comedy Central"
-tags = ["Curious Pictures","Comedy Central","VFX","commercial","breakdown","maya","aftereffects"]
-
-[menu]
-  [menu.work]
-    parent = "work_2005"
-
-+++
+---
+summary: "Comedy Is Dangerous - Comedy Central - 2005. Produced at Curious Pictures."
+image: "img/work/comedy-central/comedy-central_header.jpg"
+showonlyimage: false
+draft: false
+date: "2005-10-10T07:04:26-05:00"
+title: "Comedy Central"
+tags: ["Curious Pictures","Comedy Central","VFX","commercial","breakdown","maya","aftereffects"]
+menu:
+  work:
+    parent: '2005'
+    weight: -20051010
+    name: "Comedy Central"
+---
 
 {{< youtube 1B_J0rnQCW0 >}}
 

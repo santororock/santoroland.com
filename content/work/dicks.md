@@ -1,18 +1,17 @@
-+++
-date = "2007-10-04T06:22:35-05:00"
-image = "img/work/dicks/dicks_header.jpg"
-summary = "Dicks Sporting Goods Commercial  - TeamsAlive 2008 Produced by Curious Pictures"
-tags = ["Curious Pictures","Dicks","commercial","motion graphics","glow","lens flare"]
-showonlyimage = false
-draft = false
-weight = -20071004
-title = ": Dicks"
-
-[menu]
-  [menu.work]
-    parent = "work_2007"
-
-+++
+---
+date: "2007-10-04T06:22:35-05:00"
+image: "img/work/dicks/dicks_header.jpg"
+summary: "Dicks Sporting Goods Commercial  - TeamsAlive 2008 Produced by Curious Pictures"
+tags: ["Curious Pictures","Dicks","commercial","motion graphics","glow","lens flare"]
+showonlyimage: false
+draft: false
+title: "Dicks"
+menu:
+  work:
+    parent: '2007'
+    weight: -20071004
+    name: "Dicks"
+---
 
 {{< youtube Ij0dKL01xhY >}}
 
