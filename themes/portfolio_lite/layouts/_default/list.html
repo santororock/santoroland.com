@@ -1,8 +1,8 @@
 {{ define "content" }}
-<div class="s-layout__content-container-list">
-  <div class="s-layout__content-title-list">
-    <div class="content__title"><a href="/">SANTOROLAND</a> > Home</div>
-  </div>
+
+{{- partial "content_title.html" . -}}
+
+<div class="s-layout-content-container-list">
   {{- partial "contentcards.html" . -}}
 </div>
 {{ end }}

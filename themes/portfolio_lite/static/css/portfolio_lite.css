@@ -8,18 +8,21 @@
   --content-padding-top: 1em;
   --title-size: 2.2em;
   --title-weight: 500;
+  --sidebar-anim-duration:  0.33s;
 
   /* side bar varibles */
-  --sidebar-padding-top: 4em;
-  --sidebar-width-42em: 4em;
-  --sidebar-width-neg-42em: -4em;
-  --sidebar-width-68em: 25em;
-  --sidebar-width-neg-68em: -25em;
-  --sidebar-background-color:  rgba(16,64,64,1.0);
-  --sidebar-trigger-icon-color:  rgba(65,255,226,1.0);
-  --sidebar-icon-margin: .5em 0 0 .5em;
-  --sidebar-menu-em-font-size:  1.4em;
-  --sidebar-padding-left: 2.5em;
+  --sidebar-width:  28em;
+  --sidebar-font-size: 1.5em;
+
+  /* card variables */
+  --card-width-xlarge: 50em;
+  --card-width-large: 45em;
+  --card-width-medium: 30em;
+  --card-width-small: 20em;
+  --card-width-xsmall: 40em;
+  --card-width-xxsmall: 30em;
+
+  --card-gutter: 5em;
 
   /* theme vars */  
   --theme-color-00: rgb(60, 60, 60); /* side bar dark */
@@ -56,30 +59,100 @@ a:active {
   color: var(--theme-color-04);
 }
 
+
+
 body{
-   background-color: var(--theme-color-01); 
+   background-color: var(--theme-color-00);
 }
 
 hr{
     background-color: var(--theme-color-03);
 }
 
-li{
-    list-style: none;
+
+
+ul { 
+  margin: 0; 
+  padding: 0em 0em 1em 2em;  
 }
 
-.s-sidebar__nav-li ul > li {
-    margin-left: -2.5em;
-    padding: .5em 0em 1em 1em;
+
+li {
+  list-style: none;
 }
 
 
 
-/* custom classes css ------------------------------------------------------- */
-.mason_grid_container div {
-    width: 40rem;
+/* sidebar nav -------------------------------------------------------------- */
+
+.s-sidebar-nav-menu{
+    background-color: red;
 }
 
+.s-sidebar-nav-li{
+    font-size: var(--sidebar-font-size);
+}
+
+.s-sidebar-nav-li div{
+    display: inline-block;
+    color: ;
+}
+
+div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
+    margin-top: 0.8em;
+}
+
+.nav-main-links-icon{
+    padding-right: 0.4em;
+}
+
+.s-sidebar-nav-branding-image{
+    width: 100%;
+}
+
+.s-layout-content-header{
+    color: var(--theme-color-05);
+    display: flex;
+}
+
+.s-layout-content-header > s-layout-content-title-list{
+    color: var(--theme-color-05);
+    display: flex;
+}
+
+.s-layout{
+    
+}
+
+.s-layout-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--theme-color-01);
+    width: calc(100% - var(--sidebar-width));
+    z-index: -1;
+}
+
+.s-layout-sidebar {
+    z-index: 1001;
+    width: var(--sidebar-width);
+    background-color: var(--theme-color-00);
+}
+
+
+
+
+.content-header-sidebartrigger{
+    padding-left: 2em;
+}
+
+
+/* content header ----------------------------------------------------------- */
+.s-layout-content-title-list{
+    padding-left: 2em;
+}
+
+/* article cards css -------------------------------------------------------- */
 .card{
     padding: 0rem 0rem;
     /*box-shadow: 0em 0em .5em .1em rgba(0,0,0,.125);*/
@@ -88,22 +161,18 @@ li{
     border-style: solid;
     border-width: .1em;
     border-color: var(--theme-color-00);
-    
 }
-.card__content,.card_header{
+.card-content{
     padding: 1rem 1rem; 
     color: var(--theme-color-02);
 }
 
-.card_header{
 
-}
-
-.card__thumbnail{
+.card-thumbnail{
     margin: 0px;
 }
 
-.card__image{
+.card-image{
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
@@ -114,30 +183,31 @@ li{
       margin-right: auto;
 }
 
-.card__title{
+.card-title{
     font-size: 1.4em;
     font-weight: 500;
     color: var(--theme-color-03);
     padding-bottom: .5em;
 }
 
-.card__date{
+.card-date{
     padding-left: 1em;
     font-weight: 700;
+    color: var(--theme-color-05);
 }
 
-.card__summary{
+.card-summary{
     padding-left: 1em;
     padding-top: .5em;
+    color: var(--theme-color-02);
 }
 
 
-.content__title{
+.content-title{
     font-size: var(--title-size);
     font-weight: var(--title-weight);
     color: var(--theme-color-04);
     padding-bottom: .75em;
-    padding-top: 4em;
 }
 
 
@@ -155,233 +225,177 @@ li{
 
 
 
+/* responsive web ----------------------------------------------------------- */
 
-
-
-/* navigation sidebar --------------------------------------------------------*/
-
-/* Layout */
-.s-layout{
-    
-}
-
-.s-layout__content {
-    z-index: -1; /* place the content behind everything */
-    background: var(--theme-color-01);
-}
-
-.s-layout__content-container-single {
-    padding-left: var(--content-padding-left-right);
-    padding-right: var(--content-padding-left-right);
-    padding-top: var(--content-padding-top);
-    color:  var(--theme-color-02);
-    /*height: 100vh;*/
-}
-
-.s-layout__content-container-list {
-    padding-top: var(--content-padding-top);
-}
-
-
-.s-layout__content-title-list{
-    padding-left: var(--content-padding-left-right);
-}
-
-.s-layout__content-title-single{
-    /* nothing here yet */
-}
-
-.s-sidebar__nav-footer{
-    /* nothing here yet */
-    padding-top: 2em;
-    padding-left: var(--sidebar-padding-left);
-}
-
-
-.s-sidebar__nav-footer-copywrite-date, .s-sidebar__nav-footer-copywrite-author{
-    display: inline;
-    color: var(--theme-color-04);
-}
-
-.sidenav__title{
-    font-size: 2.0em;
-    text-align: center;
-    font-weight: var(--title-weight);
-    background: var(--theme-color-00);
-    padding-top: 0.5em;
-    color: var(--theme-color-04);
-}
-
-
-.s-sidebar__nav-branding-image{
-    clip-path: circle(50% at center);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
-}
-
-
-/* -- Mobile First -- */
-.s-sidebar__trigger {
-    z-index: 1001; /* place sidebar infront of everything */
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    height: 4em;
-    background: var(--theme-color-00);
-}
-
-.s-sidebar__trigger > i {
-    display: inline-block;
-    margin: var(--sidebar-icon-margin);
-    color: var(--sidebar-trigger-icon-color);
-}
-
-
-.s-sidebar__nav {
-    /* mouse over hamburger sidebar effect */
-    z-index: 1000;
-    position: fixed;
-    top: var(--header-height);
-    left: var(--sidebar-width-neg-68em);
-    overflow: hidden;
-    transition: all .3s ease-in;
-    width: var(--sidebar-width-68em);
-    height: 100%;
-    background: var(--theme-color-00);
-    padding-top: var(--sidebar-padding-top);
-}
-
-
-.s-sidebar__nav:hover,
-.s-sidebar__nav:focus,
-.s-sidebar__trigger:focus + .s-sidebar__nav,
-.s-sidebar__trigger:hover + .s-sidebar__nav {
-    left: 0;
-}
-
-.s-sidebar__nav-li{
-    padding: 2em 2em 1em 0em;
-}
-
-.s-sidebar__nav-ul{
-    padding-left: var(--sidebar-padding-left);
-}
-
-
-.s-sidebar__nav-header {
-    position: relative;
-    display: inline-block;
-}
-
-.s-sidebar__nav-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.s-sidebar__nav-link {
-    position: relative;
-    display: inline-block;
-}
-
-.s-sidebar__nav-icon{
-    background-color: red;
-}
-
-.s-sidebar__nav-link em {
-    width: 20em;
-    font-size:  var(--sidebar-menu-em-font-size);
-}
-
-.s-sidebar__nav-link:hover {
-    background: #4d6276;
-}
-
-
-.s-sidebar__nav-link > i {
-    padding-right: 20px;
-    padding-top: 1px;
-}
-
-
-.s-sidebar__nav-link > i::before {
-    position: absolute;
-}
-
-.s-layout__content__title{
-    font-size: 1.5em;
-}
-
-.s-layout__sidebar{
-    max-height: calc(10vh - 9rem);
-    overflow-y: scroll;
-}
-
-
-
-/* -- desktop second -- */
-@media (min-width: 42em) {
-    /* small screen 'mobile' */
-    .s-layout__content{
-        margin-left: var(--sidebar-width-42em);
+/* LARGE SCREENS: On screens that are 1140px wide or more */
+@media screen and (min-width: 1145px){
+    .s-layout-content-header{
+       /* background-color: red; /* breakpoint test color */
     }
 
-    /* Sidebar */
-    .s-sidebar__trigger {
-        width: var(--sidebar-width-42em);
+    /* card width */
+    .mason_grid_container div {
+        width: var(--card-width-large);
     }
 
-    .s-sidebar__nav {
-        width: var(--sidebar-width-42em);
-        left: 0;
-    }
-
-    .s-sidebar__nav:hover,
-    .s-sidebar__nav:focus,
-    .s-sidebar__trigger:hover + .s-sidebar__nav,
-    .s-sidebar__trigger:focus + .s-sidebar__nav {
-        width: var(--sidebar-width-68em);
-    }
-
-    .content__title{
-        padding-top: 0em;
-    }
-
-    .s-sidebar__nav-footer-copywrite-author, .s-sidebar__nav-footer-copywrite-date{
+    /* hide menu hamburger */
+    .content-header-sidebartrigger{
         display: none;
     }
 
+    /* content to right of the sidebar */
+    .s-layout-content {
+        transform: translateX(var(--sidebar-width));
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
+    .s-layout-sidebar{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
 }
 
-@media (min-width: 68em) {
-    /* widest screen 'desktop' */
-    .s-layout__content{
-        margin-left: var(--sidebar-width-68em);
+/* MED SCREENS: On screens that are 900px <-> 1140px wide */
+@media screen and (min-width: 900px) and (max-width: 1144px){
+    .s-layout-content-header{
+        /* background-color: green; /* breakpoint test color */
     }
 
-    /* Sidebar */
-    .s-sidebar__trigger {
-        display: none
+    /* card width */
+    .mason_grid_container div {
+        width: var(--card-width-medium);
     }
 
-    .s-sidebar__nav {
-        width: var(--sidebar-width-68em);
-        padding-top: 0em;
+    /* hide menue hamburger */
+    .content-header-sidebartrigger{
+        display: none;
     }
 
-    .s-sidebar__nav ul {
-        top: 1.3em;
+    /* content to right of the sidebar */
+    .s-layout-content {
+        transform: translateX(var(--sidebar-width));
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
-    .s-sidebar__nav-footer-copywrite-author, .s-sidebar__nav-footer-copywrite-date{
+    .s-layout-sidebar{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
+}
+
+
+/* SMALL SCREENS: On screens that are 600px <-> 900px wide */
+@media screen and (min-width: 600px) and (max-width: 899px){
+    .s-layout-content-header{
+        /* background-color: blue; /* breakpoint test color */
+    }
+
+    /* card width */
+    .mason_grid_container div {
+        width: var(--card-width-small);
+    }
+
+    /* move sidebar offscreen */
+    .s-layout-sidebar{
+        transform: translateX(calc(var(--sidebar-width)*-1.0));
+    }
+
+    /* make content full screen */
+    .s-layout-content {
+        width: 100%;
+    }
+
+
+}
+
+/* XSMALL SCREENS: On screens that are 600px wide or less */
+@media screen and (max-width: 599px){
+    .s-layout-content-header{
+        /* background-color: rgb(128,128,0); /* breakpoint test color */
+    }
+
+    /* card width */
+    .mason_grid_container div {
+        width: var(--card-width-xsmall);
+    }
+
+    /* move sidebar offscreen */
+    .s-layout-sidebar{
+        transform: translateX(calc(var(--sidebar-width)*-1.0));
+    }
+
+    /* make content full screen */
+    .s-layout-content {
+        width: 100%;
+    }
+
+    /* image left of text */
+    
+    .card-thumbnail{
+        float: left;
+        margin: 0px;
+        padding-right: 1em;
+        padding-right: 1em;
+    }
+    
+ 
+    /* image full height of card */
+    .card-image{
+        max-width: 200px;
         display: inline;
     }
+  
 
-    .content__title{
-        padding-top: 0em;
+}
+
+
+/* XXSMALL SCREENS: On screens that are 600px wide or less */
+@media screen and (max-width: 400px){
+    .s-layout-content-header{
+        /* background-color: rgb(0,128,128); /* breakpoint test color */
     }
+
+    /* card width */
+    .mason_grid_container div {
+        width: var(--card-width-xxsmall);
+    }
+
+    /* move sidebar offscreen */
+    .s-layout-sidebar{
+        transform: translateX(calc(var(--sidebar-width)*-1.0));
+    }
+
+    /* make content full screen */
+    .s-layout-content {
+        width: 100%;
+    }
+
+    /* image left of text */
+    
+    .card-thumbnail{
+        float: left;
+        margin: 0px;
+        padding-right: 1em;
+        padding-right: 1em;
+    }
+    
+ 
+    /* image full height of card */
+    .card-image{
+        max-width: 125px;
+        display: inline;
+    }
+  
+
 }
 

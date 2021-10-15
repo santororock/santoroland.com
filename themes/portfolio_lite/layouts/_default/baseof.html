@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    
+    <!-- header -->
     {{- partial "head.html" . -}}
-    </head>
+
+
+    <!-- Body -->
     <body>
         <div class="s-layout">
  
-            <!-- Sidebar -->
-            <div class="s-layout__sidebar">
-                {{- partial "sidenav.html" . -}}
-            </div>
+            <!-- Sidebar -->    
+            {{- partial "sidenav.html" . -}}
+            
 
             <!-- content -->
-            <main class="s-layout__content">
+            <main class="s-layout-content">
               {{ block "content" . }}
                 <!-- site content/cards -->
               {{ end }}

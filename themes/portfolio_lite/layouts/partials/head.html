@@ -1,18 +1,26 @@
-<!-- basic meta stuff -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+
+	<!-- basic meta stuff -->
+	<meta charset="utf-8">
+
+	<!-- responsive website meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!-- chota.css lite css framework-->
-<link rel="stylesheet" href="{{ "css/chota.css" | absURL }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- site css -->
-<link rel="stylesheet" href="{{ "css/portfolio_lite.css" | absURL }}">
 
-<!-- Site title -->
-{{ $title := print .Site.Title " | " .Title }}
-{{ if .IsHome }}
-	{{ $title = .Site.Title }}
-{{ end }}
-<title>{{ $title }}</title>
+	<!-- chota.css lite css framework-->
+	<link rel="stylesheet" href="{{ "css/chota.css" | absURL }}">
+
+	<!-- site css -->
+	<link rel="stylesheet" href="{{ "css/portfolio_lite.css" | absURL }}">
+
+	<!-- Site title -->
+	{{ $title := print .Site.Title " | " .Title }}
+	{{ if .IsHome }}
+		{{ $title = .Site.Title }}
+	{{ end }}
+	<title>{{ $title }}</title>
+
+</head>
