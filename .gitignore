@@ -4,4 +4,6 @@
 # ignore the crazy dzi files
 *.dzi
 
+# ignor the render directory
+/public
 

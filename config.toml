@@ -7,7 +7,7 @@ theme = "portfolio_lite"
 languageCode = "en-us"
 
 
-
+timeout = 200000
 
 
 name = "Portfolio_lite"

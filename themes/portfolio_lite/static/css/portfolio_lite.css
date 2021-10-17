@@ -4,15 +4,17 @@
 
   /* global site vars */  
   --border-radius: 0.125em;
-  --content-padding-left-right: 5em;
+  --content-padding-left-right: 1em;
   --content-padding-top: 1em;
-  --title-size: 2.2em;
+  --title-size: 3.0em;
   --title-weight: 500;
   --sidebar-anim-duration:  0.33s;
+  --site-padding-top: 3em;
 
   /* side bar varibles */
   --sidebar-width:  28em;
   --sidebar-font-size: 1.5em;
+  --sidebar-padding-left: 1em;
 
   /* card variables */
   --card-width-xlarge: 50em;
@@ -81,6 +83,8 @@ li {
   list-style: none;
 }
 
+/* content single ----------------------------------------------------------- */
+
 
 
 /* sidebar nav -------------------------------------------------------------- */
@@ -111,7 +115,6 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 .s-layout-content-header{
-    color: var(--theme-color-05);
     display: flex;
 }
 
@@ -137,8 +140,8 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     z-index: 1001;
     width: var(--sidebar-width);
     background-color: var(--theme-color-00);
+    float:left;
 }
-
 
 
 
@@ -149,7 +152,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
 /* content header ----------------------------------------------------------- */
 .s-layout-content-title-list{
-    padding-left: 2em;
+    padding-left: var(--content-padding-left-right);
 }
 
 /* article cards css -------------------------------------------------------- */
@@ -162,6 +165,12 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     border-width: .1em;
     border-color: var(--theme-color-00);
 }
+
+.card:hover{
+    border-color: var(--theme-color-05);
+}
+
+
 .card-content{
     padding: 1rem 1rem; 
     color: var(--theme-color-02);
@@ -173,18 +182,18 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 .card-image{
-    object-fit: contain;
-    max-width: 100%;
+    width: calc(100% - 2px);
     max-height: 100%;
     height: auto;
     border-radius: var(--border-radius);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-1px);
 }
 
 .card-title{
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 500;
     color: var(--theme-color-03);
     padding-bottom: .5em;
@@ -203,29 +212,40 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 
-.content-title{
+.content-title, .sidebar-title{
     font-size: var(--title-size);
     font-weight: var(--title-weight);
-    color: var(--theme-color-04);
+    color: var(--theme-color-02);
     padding-bottom: .75em;
 }
 
+.sidebar-title{
+    padding-left: var(--sidebar-padding-left);
+}
 
 .footer{
     color: var(--theme-color-02);   
 }
 
-
-
-
-
-
-
-
-
+.content-header-sidebartrigger{
+    color: var(--theme-color-04);
+    cursor: pointer;
+}
 
 
 /* responsive web ----------------------------------------------------------- */
+
+.content-header-sidebartrigger:hover{
+    color: var(--theme-color-05);
+}
+
+.content-header-sidebartrigger:active{
+    color: red;
+}
+
+.content-header-sidebartrigger:active:after{
+    color: blue;
+}
 
 /* LARGE SCREENS: On screens that are 1140px wide or more */
 @media screen and (min-width: 1145px){
@@ -256,6 +276,11 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         transition-property: transform;
         transition-duration: var(--sidebar-anim-duration);
         transition-delay: 0s;
+        margin: 0;
+    }
+
+    .content-title-branding{
+        display: none;
     }
 
 }
@@ -291,6 +316,10 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         transition-delay: 0s;
     }
 
+    .content-title-branding{
+        display: none;
+    }
+
 }
 
 
@@ -315,6 +344,9 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         width: 100%;
     }
 
+    .sidebar-title-branding{
+        display: none;
+    }
 
 }
 
@@ -353,8 +385,12 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     .card-image{
         max-width: 200px;
         display: inline;
+        transform: translateX(0px);
     }
   
+    .sidebar-title-branding{
+        display: none;
+    }
 
 }
 
@@ -394,8 +430,13 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     .card-image{
         max-width: 125px;
         display: inline;
+        transform: translateX(0px);
     }
   
+    .sidebar-title-branding{
+        display: none;
+    }
 
 }
+
 
