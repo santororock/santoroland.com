@@ -12,9 +12,9 @@
   --site-padding-top: 3em;
 
   /* side bar varibles */
-  --sidebar-width:  28em;
+  --sidebar-width:  32em;
   --sidebar-font-size: 1.5em;
-  --sidebar-padding-left: 1em;
+  --sidebar-padding-left: 1.5em;
 
   /* card variables */
   --card-width-xlarge: 50em;
@@ -27,7 +27,7 @@
   --card-gutter: 5em;
 
   /* theme vars */  
-  --theme-color-00: rgb(60, 60, 60); /* side bar dark */
+  --theme-color-00: rgb(96, 96, 96); /* side bar dark */
   --theme-color-01: rgb(47, 47, 47); /* main content bg */
   --theme-color-01a: rgb(68, 68, 68); /* card bg */
   --theme-color-01b: rgb(181, 251, 213); /* link visited */
@@ -35,6 +35,7 @@
   --theme-color-03: rgb(204, 212, 20); /* card title color */
   --theme-color-04: rgb(203, 234, 0); /* link selected */
   --theme-color-05: rgb(255, 170, 90); /* link hover */
+  --theme-color-06: rgba(0,0,0,0.25); /* drop shadow color */
 
 }
 
@@ -112,6 +113,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
 .s-sidebar-nav-branding-image{
     width: 100%;
+    clip-path: circle(calc(var(--sidebar-width)/2) at center);
 }
 
 .s-layout-content-header{
@@ -144,10 +146,29 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 
-
-.content-header-sidebartrigger{
-    padding-left: 2em;
+.content-header-sidebartrigger button{
+    font-size: 2em;
+    padding: 0.5em;
 }
+
+
+.sidebar-heading-fun-text{
+    text-align: right;
+    color: var(--theme-color-01);
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-left: var(--sidebar-padding-left);
+    padding-right: var(--sidebar-padding-left);
+}
+
+.sidebar-info-blurb{
+    color: var(--theme-color-02);
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-left: var(--sidebar-padding-left);
+    padding-right: var(--sidebar-padding-left);
+}
+
 
 
 /* content header ----------------------------------------------------------- */
@@ -167,7 +188,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 .card:hover{
-    border-color: var(--theme-color-05);
+    filter: drop-shadow(.5em .5em .5em var(--theme-color-06));
 }
 
 
@@ -233,8 +254,6 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 
-/* responsive web ----------------------------------------------------------- */
-
 .content-header-sidebartrigger:hover{
     color: var(--theme-color-05);
 }
@@ -246,6 +265,12 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 .content-header-sidebartrigger:active:after{
     color: blue;
 }
+
+
+
+/* responsive web ----------------------------------------------------------- */
+
+
 
 /* LARGE SCREENS: On screens that are 1140px wide or more */
 @media screen and (min-width: 1145px){
@@ -337,11 +362,17 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     /* move sidebar offscreen */
     .s-layout-sidebar{
         transform: translateX(calc(var(--sidebar-width)*-1.0));
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     /* make content full screen */
     .s-layout-content {
         width: 100%;
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     .sidebar-title-branding{
@@ -364,11 +395,17 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     /* move sidebar offscreen */
     .s-layout-sidebar{
         transform: translateX(calc(var(--sidebar-width)*-1.0));
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     /* make content full screen */
     .s-layout-content {
         width: 100%;
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     /* image left of text */
@@ -409,11 +446,17 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     /* move sidebar offscreen */
     .s-layout-sidebar{
         transform: translateX(calc(var(--sidebar-width)*-1.0));
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     /* make content full screen */
     .s-layout-content {
         width: 100%;
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
     /* image left of text */
@@ -439,4 +482,20 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
 }
 
+
+/* expand side bar */
+/* this class is added dynamically via sidebar-menu.js */ 
+.s-layout-sidebar.sidebar-active{
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: var(--sidebar-anim-duration);
+    transition-delay: 0s;
+}
+
+.s-layout-content.sidebar-active{
+    transform: translateX(var(--sidebar-width));
+    transition-property: transform;
+    transition-duration: var(--sidebar-anim-duration);
+    transition-delay: 0s;
+}
 
