@@ -1,6 +1,6 @@
 ---
 image: "img/work/ave-amy/ave-amy_header.jpg"
-date: "1999-06-28T20:11:10-05:00"
+date: 1999-06-28T20:11:10-05:00
 showonlyimage: false
 draft: false
 tags: ["Ave.Amy","Curious Pictures","animation","CG"]
@@ -9,7 +9,7 @@ title: "Ave Amy"
 menu:
   work:
     parent: '1999'
-    weight: -19990628
+    weight: 19990628
     name: "Ave Amy"
 ---
 

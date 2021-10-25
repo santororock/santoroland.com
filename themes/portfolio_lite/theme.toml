@@ -13,8 +13,3 @@ min_version = "0.41.0"
   name = "Anthony Luigi Santoro"
   homepage = "https://www.santoroland.com"
 
-
-[params]
-  author = "Nikola Tesla"
-  description = "Tesla's Awesome Hugo Site"
-

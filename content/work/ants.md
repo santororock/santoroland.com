@@ -1,15 +1,15 @@
 ---
-showonlyimage: false
-draft: false
-summary: "Ant animation for Morgan Spurlock Produced at Curious Pictures"
-tags: ["Curious Pictures","Morgan Spurlock","animation","maya","mentalray","aftereffects"]
-date: "2011-06-16T08:12:22-05:00"
 title: "Ants"
+draft: false
+date: 2011-06-16T08:12:22-05:00
+showonlyimage: false
 image: "img/work/ants/ants_header.jpg"
+tags: ["Curious Pictures","Morgan Spurlock","animation","maya","mentalray","aftereffects"]
+summary: "Ant animation for Morgan Spurlock Produced at Curious Pictures"
 menu:
   work:
     parent: '2011'
-    weight: -20110616
+    weight: 20110616
     name: "Ants"
 ---
 

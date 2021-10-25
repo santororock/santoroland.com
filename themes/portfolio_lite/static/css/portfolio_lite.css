@@ -12,9 +12,10 @@
   --site-padding-top: 3em;
 
   /* side bar varibles */
-  --sidebar-width:  32em;
+  --sidebar-width:  42em;
   --sidebar-font-size: 1.5em;
   --sidebar-padding-left: 1.5em;
+  --menu-button-width: 5em;
 
   /* card variables */
   --card-width-xlarge: 50em;
@@ -135,7 +136,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     left: 0px;
     background-color: var(--theme-color-01);
     width: calc(100% - var(--sidebar-width));
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 .s-layout-sidebar {
@@ -146,10 +147,6 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 }
 
 
-.content-header-sidebartrigger button{
-    font-size: 2em;
-    padding: 0.5em;
-}
 
 
 .sidebar-heading-fun-text{
@@ -248,21 +245,36 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     color: var(--theme-color-02);   
 }
 
-.content-header-sidebartrigger{
+
+
+/* content css -------------------------------------------------------------- */
+
+.content-header-sidebar-trigger{
+    z-index: 1005;
+}
+
+.content-header-sidebar-trigger button{
+    font-size: 2em;
+    padding: 0.5em;
+    width:  var(--menu-button-width);
+}
+
+
+.content-header-sidebar-trigger{
     color: var(--theme-color-04);
     cursor: pointer;
 }
 
 
-.content-header-sidebartrigger:hover{
+.content-header-sidebar-trigger:hover{
     color: var(--theme-color-05);
 }
 
-.content-header-sidebartrigger:active{
+.content-header-sidebar-trigger:active{
     color: red;
 }
 
-.content-header-sidebartrigger:active:after{
+.content-header-sidebar-trigger:active:after{
     color: blue;
 }
 
@@ -284,7 +296,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     }
 
     /* hide menu hamburger */
-    .content-header-sidebartrigger{
+    .content-header-sidebar-trigger{
         display: none;
     }
 
@@ -308,6 +320,14 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         display: none;
     }
 
+    /* move menu button back */
+    .s-layout-content-header{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
 }
 
 /* MED SCREENS: On screens that are 900px <-> 1140px wide */
@@ -322,7 +342,7 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
     }
 
     /* hide menue hamburger */
-    .content-header-sidebartrigger{
+    .content-header-sidebar-trigger{
         display: none;
     }
 
@@ -343,6 +363,14 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
     .content-title-branding{
         display: none;
+    }
+
+    /* move menu button back */
+    .s-layout-content-header{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
 }
@@ -377,6 +405,14 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
     .sidebar-title-branding{
         display: none;
+    }
+
+    /* move menu button back */
+    .s-layout-content-header{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
     }
 
 }
@@ -429,10 +465,18 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         display: none;
     }
 
+    /* move menu button back */
+    .s-layout-content-header{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
 }
 
 
-/* XXSMALL SCREENS: On screens that are 600px wide or less */
+/* XXSMALL SCREENS: On screens that are 400px wide or less */
 @media screen and (max-width: 400px){
     .s-layout-content-header{
         /* background-color: rgb(0,128,128); /* breakpoint test color */
@@ -480,11 +524,23 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
         display: none;
     }
 
+    /* move menu button back */
+    .s-layout-content-header{
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: var(--sidebar-anim-duration);
+        transition-delay: 0s;
+    }
+
 }
+
 
 
 /* expand side bar */
 /* this class is added dynamically via sidebar-menu.js */ 
+/* xsmall - xlarge */
+/* There is a bug where the UI gets messed up if the window 
+is resized while the menu is expanded .... interesting issue...:( */
 .s-layout-sidebar.sidebar-active{
     transform: translateX(0);
     transition-property: transform;
@@ -494,6 +550,13 @@ div#s-sidebar-nav-menu > .s-sidebar-nav-ul > .s-sidebar-nav-li{
 
 .s-layout-content.sidebar-active{
     transform: translateX(var(--sidebar-width));
+    transition-property: transform;
+    transition-duration: var(--sidebar-anim-duration);
+    transition-delay: 0s;
+}
+
+.s-layout-content-header.sidebar-active{
+    transform: translateX(calc( var(--menu-button-width)*-2));
     transition-property: transform;
     transition-duration: var(--sidebar-anim-duration);
     transition-delay: 0s;

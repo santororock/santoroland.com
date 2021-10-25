@@ -4,12 +4,12 @@ draft: false
 date: 2006-05-26T09:47:15-04:00
 showonlyimage: false
 image: "img/work/barbie-diaries/barbie-diaries_header.jpg"
-tags: ["",""]
-summary: ""
+tags: ["cartoon","curious pictures"]
+summary: "Barbie Diaries (2006) film produced at Curious Pictures in NYC."
 menu:
   work:
     parent: '2006'
-    weight: -20060526
+    weight: 20060526
     name: "Barbie Diaries"
 ---
 

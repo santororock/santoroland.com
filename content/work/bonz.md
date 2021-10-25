@@ -1,15 +1,15 @@
 ---
 tags: ["Curious Pictures","Bonz","Toys","Toy Fair"]
 image: "img/work/bonz/bonz_header.jpg"
-summary: ""
+summary: "Small animations produced for the Curious Toys booth at Toy Con in NYC."
 showonlyimage: false
 draft: false
-date: "1999-01-18T18:04:16-05:00"
+date: 1999-01-18T18:04:16-05:00
 title: "Bonz"
 menu:
   work:
     parent: '1999'
-    weight: -19990118
+    weight: 19990118
     name: "Bonz"
 ---
 

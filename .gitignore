@@ -1,9 +1,6 @@
-# ignore all the quantize files generated for the image thumbnails
-*.quantized
-
 # ignore the crazy dzi files
 *.dzi
 
-# ignor the render directory
+# ignore the render directory
 /public
-
+/resources

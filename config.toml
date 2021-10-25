@@ -2,22 +2,17 @@
 
 baseurl = "https://www.santoroland.com/"
 title = "santoroland"
-
 theme = "portfolio_lite"
 languageCode = "en-us"
-
-
 timeout = 200000
-
-
 name = "Portfolio_lite"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "site description here"
 homepage = "https://www.santoroland.com"
 tags = []
 features = []
-min_version = "0.41.0"
+min_version = "0.88.1"
 
 [author]
   name = "Anthony Luigi Santoro"

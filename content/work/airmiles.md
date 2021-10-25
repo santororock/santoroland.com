@@ -1,5 +1,5 @@
 ---
-date: "2007-10-17T06:37:57-05:00"
+date: 2007-10-17T06:37:57-05:00
 draft: false
 summary: "Airmiles commercial 2007 - Produced at Curious Pictures."
 tags: ["Curious Pictures","Airmiles","commercial","vfx","compositing"]
@@ -9,7 +9,7 @@ title: "Airmiles"
 menu:
   work:
     parent: '2007'
-    weight: -20071010
+    weight: 20071010
     name: "Airmiles"
 ---
 

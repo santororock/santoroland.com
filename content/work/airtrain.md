@@ -1,15 +1,15 @@
 ---
-summary: "Promotional for upcoming Air Train survice to JFK."
+title: "AirTrain"
+draft: false
+date: 2002-01-25T19:46:23-05:00
+showonlyimage: false
 image: "img/work/airtrain/airtrain_header.jpg"
 tags: ["commercial","cg","non-photorealistic","animation"]
-showonlyimage: false
-draft: false
-date: "2002-01-25T19:46:23-05:00"
-title: "AirTrain"
+summary: "Promotional for upcoming Air Train survice to JFK."
 menu:
   work:
     parent: '2002'
-    weight: -20020125
+    weight: 20020125
     name: "AirTrain"
 ---
 

@@ -43,6 +43,7 @@
                   </a>
                </li>
 
+
                <!-- navigation work (dynamic items) -->
                <li class="s-sidebar-nav-li">
                   <a class="s-sidebar-nav-link" href="#0">
@@ -56,13 +57,12 @@
                         {{ if .HasChildren }}
                            <li>
                               <a class="s-sidebar-nav-link" href="">
-                                 {{ .Pre }}
                                  {{ .Name }}
                               </a>
                               <ul>
                                  {{ range .Children }}
                                     <li {{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>
-                                       <a class="s-sidebar-nav-link" href="{{.URL}}">{{ .Name }}</a>
+                                       <a class="s-sidebar-nav-link" href="{{.URL}}">{{ .Weight }} - {{ .Title }}</a>
                                     </li>
                                  {{ end }}
                               </ul>

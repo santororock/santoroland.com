@@ -1,15 +1,15 @@
 ---
-image: "img/work/alfa-romeo-stelvio/alfa-romeo-stelvio_header.jpg"
-showonlyimage: false
-draft: false
-date: "2016-12-27T10:06:22-05:00"
 title: "Alfa Romeo - Stelvio"
-summary: "Framestore Car commercial for the new Alfa Romeo - Stelvio SUV"
+draft: false
+date: 2016-12-27T10:06:22-05:00
+showonlyimage: false
+image: "img/work/alfa-romeo-stelvio/alfa-romeo-stelvio_header.jpg"
 tags: ["cg","commercials","car","compositing"]
+summary: "Framestore Car commercial for the new Alfa Romeo - Stelvio SUV"
 menu:
   work:
     parent: '2016'
-    weight: -20161227
+    weight: 20161227
     name: "Alfa Romeo - Stelvio"
 ---
 

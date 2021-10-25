@@ -1,15 +1,15 @@
 ---
-date: "2010-11-02T18:49:49-05:00"
-draft: false
-summary: "Motion Graphics test for Aflac"
-tags: ["Curious Pictures","Motion Graphics","animation","cg"]
-image: "img/work/aflac-motion-test/aflac-motion-test_header.jpg"
-showonlyimage: false
 title: "Aflac Motion Test"
+draft: false
+date: 2010-11-02T18:49:49-05:00
+showonlyimage: false
+image: "img/work/aflac-motion-test/aflac-motion-test_header.jpg"
+tags: ["Curious Pictures","Motion Graphics","animation","cg"]
+summary: "Motion Graphics test for Aflac"
 menu:
   work:
     parent: '2010'
-    weight: -20101102
+    weight: 20101102
     name: "Aflac Motion Test"
 ---
 

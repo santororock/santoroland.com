@@ -9,7 +9,7 @@ summary: "Breakdown of sequences lead for the 2017 film Bladerunner 2049."
 menu:
   work:
     parent: '2017'
-    weight: -20171225
+    weight: 20171225
     name: "Bladerunner 2049"
 ---
 
