@@ -1,4 +1,4 @@
-# ignore image files
+# do not ignore image files
 *.jpg
 *.jpeg
 *.png
