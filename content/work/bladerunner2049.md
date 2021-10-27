@@ -18,7 +18,7 @@ menu:
 
 ---
 
-By the numbers, Bladerunnder 2049 was likely the largest project / bit of work I'd personably been responsible for in my career. For better or worse. With the success of [Arrival](http://www.imdb.com/title/tt2543164/) and the excitement of the studio to be working with [Denis Villeneuve ](https://www.imdb.com/name/nm0898288/) once more, they were keen to give the director as many as the same Framestore crew as before. I was included in this mix.
+By the numbers, Bladerunner 2049 was likely the largest project / bit of work I'd personably been responsible for in my career. For better or worse. With the success of [Arrival](http://www.imdb.com/title/tt2543164/) and the excitement of the studio to be working with [Denis Villeneuve ](https://www.imdb.com/name/nm0898288/) once more, they were keen to give the director as many as the same Framestore crew as before. I was included in this mix.
 
 I was hesitant at first when approached by the studio asking if I'd be interested in the compositing supervisor role for the film. A quick google search revealed it as one of the top 10 most anticipated films of 2017. Not only that, there was a legacy to uphold. The original film had an intensely loyal fan-base. It also seemed as if franchise 'reboots' were under public scrutiny in the last several years (maybe they always are?). The remake of a classic that is often referred to as a 'masterpiece' is a tall order. I was not confident I was the right man for the job. The VFX were going to require a mammoth amount of planning, new ideas, ingenuity, sensitivity and work.
 
