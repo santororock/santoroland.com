@@ -76,7 +76,7 @@ sub create_gallery_markdown{
    $html .= "\t\"$html_folder_path\"\n";
 
    foreach my $el (@dir_contents){
-     if ( ($el !~ m/^thumb/i) && ($el !~ m/^\./) && (-f "$dir_to_open/$el")  && ($el !~ m/\.html$/) && ($el !~ m/\.quantized$/)){
+     if ( ($el !~ m/^thumb/i) && ($el !~ m/^\./) && (-f "$dir_to_open/$el")  && ($el !~ m/\.html$/) && ($el !~ m/\.quantized$/) && ($el !~ m/\.res$/)){
        $html .= "\t\"pure-u-1-3\" \"$el|alt\"\n";
      }
    }

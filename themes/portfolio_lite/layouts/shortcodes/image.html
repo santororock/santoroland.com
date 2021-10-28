@@ -1,15 +1,20 @@
 <!-- image -->
+{{ $src := .Get "src" }}
+{{ $file_res := (printf "/static/%s.res" $src) }}
+{{ $file_contents := readFile $file_res }}
+{{ $res := split $file_contents "x" }}
+{{ $res_x := index $res 0 }}
+{{ $res_y := index $res 1 }}
+
+
 
 <figure>
-  <a href="#" data-featherlight="{{ .Get "src" }}">
+  <a href="#" data-featherlight="{{ $src }}">
 
-    {{ $src := .Get "thumb" }}
-    {{ $config := imageConfig (printf "/static/%s" $src) }}
-
-    {{ if gt $config.Width $config.Height }}
+    {{ if gt $res_x $res_y }}
       <img src="{{ .Get "thumb" }}" style="width: 100%;" >
     {{ else }}
-      <img src="{{ .Get "thumb" }}" style="width: 100%; max-width: {{$config.Width}}px; display:block; margin-left: auto; margin-right: auto;">
+      <img src="{{ .Get "thumb" }}" style="width: 100%; max-width: {{$res_x}}px; display:block; margin-left: auto; margin-right: auto;">
     {{ end }}
 
   </a>
@@ -19,3 +24,4 @@
 </figure>
 
 <!-- image -->
+

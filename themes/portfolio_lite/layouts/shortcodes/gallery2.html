@@ -20,19 +20,24 @@
           <div class={{ $class }}>
             <div style="padding: .2em .2em .2em .2em">
               {{ $img_no_quotes := replace (index $items 0) "\"" "" }}
-              {{ $img_thumb := replace $img_no_quotes "png" "jpg" }}
-              {{ $img_thumb := (printf "%s/thumb_%s" $path $img_thumb ) }}
+              {{ $img_thumb_file := replace $img_no_quotes "png" "jpg" }}
+              {{ $img_thumb := (printf "%s/thumb_%s" $path $img_thumb_file ) }}
+              {{ $img_thumb_file_res := (printf "/static/%s/thumb_%s.res" $path $img_thumb_file ) }}
 
               <a href="{{ $path }}/{{ $img_no_quotes }}" class="gallery">
-                {{ $img := $img_thumb }}
-                {{ $config := imageConfig (printf "/static/%s" $img) }}
-                {{ $file := (printf "/static/%s.quantized" $img) }}
+                {{ $img_quantized_file := (printf "/static/%s.quantized" $img_thumb) }}
+
+                {{ $file_contents := readFile $img_thumb_file_res }}
+                {{ $res := split $file_contents "x" }}
+                {{ $res_x := index $res 0 }}
+                {{ $res_y := index $res 1 }}
+
                 <img
                   class="b-lazy pure-img-responsive"
-                  src="data:image/gif;base64,{{readFile $file}}"
-                  data-src="{{ $img }}"
+                  src="data:image/gif;base64,{{readFile $img_quantized_file}}"
+                  data-src="{{ $img_thumb }}"
                   alt="{{ if ge $itemCount 2 }}{{ $img_no_quotes }}{{ else }}{{ "" }}{{ end }}"
-                  width="{{$config.Width}}" height="{{$config.Height}}"
+                  width="{{$res_x}}" height="{{$res_y}}"
                 />
               </a>
             </div>

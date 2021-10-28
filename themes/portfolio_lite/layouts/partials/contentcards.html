@@ -11,9 +11,16 @@
                     {{ if and (isset .Params "image") .Params.image }}
                         <a href="{{ .Permalink }}">
                             {{ $src := .Params.image }}
-                            {{ $config := imageConfig (printf "/static/%s" $src) }}
-                            {{ $file := (printf "/static/%s.quantized" .Params.image) }}
-                            <img class="b-lazy img-responsive card-image" src="data:image/gif;base64,{{readFile $file}}" data-src="{{ .Params.image }}" alt="..." width="{{$config.Width}}" height="{{$config.Height}}"/>
+                            
+                            {{ $file := (printf "/static/%s.quantized" $src) }}
+
+                            {{ $file_image_res := (printf "/static/%s.res" $src)}}
+                            {{ $file_contents := readFile $file_image_res }}
+                            {{ $res := split $file_contents "x" }}
+                            {{ $res_x := index $res 0 }}
+                            {{ $res_y := index $res 1 }}
+
+                            <img class="b-lazy img-responsive card-image" src="data:image/gif;base64,{{readFile $file}}" data-src="{{ $src }}" alt="..." width="{{$res_x}}" height="{{$res_y}}"/>
                         </a>
                     {{end}}
                 </figure>
